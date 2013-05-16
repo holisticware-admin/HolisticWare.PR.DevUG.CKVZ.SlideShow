@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoMania", "PhotoMania\PhotoMania.csproj", "{1CF192B8-5937-4DE9-BDE3-771AE64C8062}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoManiaMac", "PhotoManiaMac\PhotoManiaMac.csproj", "{F4E935B7-8151-4DEB-866D-EA75C70053C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+		AppStore|x86 = AppStore|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CF192B8-5937-4DE9-BDE3-771AE64C8062}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{1CF192B8-5937-4DE9-BDE3-771AE64C8062}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{1CF192B8-5937-4DE9-BDE3-771AE64C8062}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{1CF192B8-5937-4DE9-BDE3-771AE64C8062}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{1CF192B8-5937-4DE9-BDE3-771AE64C8062}.AppStore|x86.ActiveCfg = AppStore|iPhone
+		{1CF192B8-5937-4DE9-BDE3-771AE64C8062}.AppStore|x86.Build.0 = AppStore|iPhone
+		{1CF192B8-5937-4DE9-BDE3-771AE64C8062}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{1CF192B8-5937-4DE9-BDE3-771AE64C8062}.Debug|iPhone.Build.0 = Debug|iPhone
+		{1CF192B8-5937-4DE9-BDE3-771AE64C8062}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{1CF192B8-5937-4DE9-BDE3-771AE64C8062}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{1CF192B8-5937-4DE9-BDE3-771AE64C8062}.Debug|x86.ActiveCfg = Debug|iPhoneSimulator
+		{1CF192B8-5937-4DE9-BDE3-771AE64C8062}.Debug|x86.Build.0 = Debug|iPhoneSimulator
+		{1CF192B8-5937-4DE9-BDE3-771AE64C8062}.Release|iPhone.ActiveCfg = Release|iPhone
+		{1CF192B8-5937-4DE9-BDE3-771AE64C8062}.Release|iPhone.Build.0 = Release|iPhone
+		{1CF192B8-5937-4DE9-BDE3-771AE64C8062}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{1CF192B8-5937-4DE9-BDE3-771AE64C8062}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{1CF192B8-5937-4DE9-BDE3-771AE64C8062}.Release|x86.ActiveCfg = Release|iPhoneSimulator
+		{1CF192B8-5937-4DE9-BDE3-771AE64C8062}.Release|x86.Build.0 = Release|iPhoneSimulator
+		{F4E935B7-8151-4DEB-866D-EA75C70053C0}.Ad-Hoc|iPhone.ActiveCfg = Debug|x86
+		{F4E935B7-8151-4DEB-866D-EA75C70053C0}.Ad-Hoc|iPhone.Build.0 = Debug|x86
+		{F4E935B7-8151-4DEB-866D-EA75C70053C0}.AppStore|iPhone.ActiveCfg = AppStore|x86
+		{F4E935B7-8151-4DEB-866D-EA75C70053C0}.AppStore|iPhone.Build.0 = AppStore|x86
+		{F4E935B7-8151-4DEB-866D-EA75C70053C0}.AppStore|x86.ActiveCfg = AppStore|x86
+		{F4E935B7-8151-4DEB-866D-EA75C70053C0}.AppStore|x86.Build.0 = AppStore|x86
+		{F4E935B7-8151-4DEB-866D-EA75C70053C0}.Debug|iPhone.ActiveCfg = Debug|x86
+		{F4E935B7-8151-4DEB-866D-EA75C70053C0}.Debug|iPhone.Build.0 = Debug|x86
+		{F4E935B7-8151-4DEB-866D-EA75C70053C0}.Debug|iPhoneSimulator.ActiveCfg = Debug|x86
+		{F4E935B7-8151-4DEB-866D-EA75C70053C0}.Debug|iPhoneSimulator.Build.0 = Debug|x86
+		{F4E935B7-8151-4DEB-866D-EA75C70053C0}.Debug|x86.ActiveCfg = Debug|x86
+		{F4E935B7-8151-4DEB-866D-EA75C70053C0}.Debug|x86.Build.0 = Debug|x86
+		{F4E935B7-8151-4DEB-866D-EA75C70053C0}.Release|iPhone.ActiveCfg = Release|x86
+		{F4E935B7-8151-4DEB-866D-EA75C70053C0}.Release|iPhone.Build.0 = Release|x86
+		{F4E935B7-8151-4DEB-866D-EA75C70053C0}.Release|iPhoneSimulator.ActiveCfg = Release|x86
+		{F4E935B7-8151-4DEB-866D-EA75C70053C0}.Release|iPhoneSimulator.Build.0 = Release|x86
+		{F4E935B7-8151-4DEB-866D-EA75C70053C0}.Release|x86.ActiveCfg = Release|x86
+		{F4E935B7-8151-4DEB-866D-EA75C70053C0}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = PhotoManiaMac\PhotoManiaMac.csproj
+	EndGlobalSection
+EndGlobal
