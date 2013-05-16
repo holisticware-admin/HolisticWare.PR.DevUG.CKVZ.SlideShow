@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6C99514A-AE9B-4333-8667-9C2BB9F432C7}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>HolisticWare.SlideShow.Model</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>HolisticWare.SlideShow.DLL_BL_MT</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\HolisticWare.SlideShow.DLL_BL_WF\Web References\TestUploader.Uploader.FileUploader\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+      <Link>Web References\TestUploader.Uploader.FileUploader\Reference.cs</Link>
+    </Compile>
+    <None Include="..\HolisticWare.SlideShow.DLL_BL_WF\Web References\TestUploader.Uploader.FileUploader\WebServiceFileUploader.disco">
+      <Link>Web References\TestUploader.Uploader.FileUploader\WebServiceFileUploader.disco</Link>
+    </None>
+    <None Include="..\HolisticWare.SlideShow.DLL_BL_WF\Web References\TestUploader.Uploader.FileUploader\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+      <Link>Web References\TestUploader.Uploader.FileUploader\Reference.map</Link>
+    </None>
+    <None Include="..\HolisticWare.SlideShow.DLL_BL_WF\Web References\TestUploader.Uploader.FileUploader\WebServiceFileUploader.wsdl">
+      <Link>Web References\TestUploader.Uploader.FileUploader\WebServiceFileUploader.wsdl</Link>
+    </None>
+    <None Include="app.config" />
+    <WebReferences Include="Web References\" />
+    <WebReferenceUrl Include="http://localhost:21886/WebServiceFileUploader.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\TestUploader.Uploader.FileUploader\</RelPath>
+      <UpdateFromURL>http://localhost:21886/WebServiceFileUploader.asmx</UpdateFromURL>
+      <ServiceLocationURL />
+      <CachedDynamicPropName />
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>HolisticWare_SlideShow_EXE_WF_TestUploader_Uploader_FileUploader_WebServiceFileUploader</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
