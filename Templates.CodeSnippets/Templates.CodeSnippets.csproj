@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E598EA3C-1C0A-42DD-993A-D151535DAC38}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Templates.CodeSnippets</RootNamespace>
+    <AssemblyName>Templates.CodeSnippets</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ASPNET.MVC\Controllers\ImageController.cs" />
+    <Compile Include="ASPNET.MVC\Models\Image.cs" />
+    <Compile Include="ASPNET.MVC\Models\Images.cs" />
+    <Compile Include="ASPNET.MVC\WebServiceFileUploader.asmx.cs">
+      <DependentUpon>WebServiceFileUploader.asmx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ASPNET.MVC\Slides\2013-02-16 10.09.11.jpg" />
+    <Content Include="ASPNET.MVC\Slides\2013-03-02 11.48.09.jpg" />
+    <Content Include="ASPNET.MVC\Slides\2013-03-02 11.48.45.jpg" />
+    <Content Include="ASPNET.MVC\Slides\379016_334589459899857_249723005053170_1492499_846590464_n.jpg" />
+    <Content Include="ASPNET.MVC\Slides\ImageMetaData.xml" />
+    <Content Include="ASPNET.MVC\Slides\IMG_1852.JPG" />
+    <Content Include="ASPNET.MVC\Slides\IMG_1975.JPG" />
+    <Content Include="ASPNET.MVC\Slides\IMG_2055.JPG" />
+    <Content Include="ASPNET.MVC\Slides\IMG_2057.JPG" />
+    <Content Include="ASPNET.MVC\Slides\IMG_2059.mp4" />
+    <Content Include="ASPNET.MVC\Views\Image\Index.aspx" />
+    <Content Include="ASPNET.MVC\Site.Master.txt" />
+    <Content Include="ASPNET.MVC\WebServiceFileUploader.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ASPNET.MVC\Slides\EULA.doc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
