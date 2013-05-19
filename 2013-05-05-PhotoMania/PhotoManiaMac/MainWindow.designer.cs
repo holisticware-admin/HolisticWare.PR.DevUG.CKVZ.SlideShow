@@ -22,6 +22,12 @@ namespace PhotoManiaMac
 
 		[Outlet]
 		MonoMac.AppKit.NSButton buttonSendPhoto { get; set; }
+
+		[Outlet]
+		MonoMac.AppKit.NSTextField textFieldIPAddress { get; set; }
+
+		[Outlet]
+		MonoMac.AppKit.NSTextField textFieldPort { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
@@ -43,6 +49,16 @@ namespace PhotoManiaMac
 			if (buttonSendPhoto != null) {
 				buttonSendPhoto.Dispose ();
 				buttonSendPhoto = null;
+			}
+
+			if (textFieldIPAddress != null) {
+				textFieldIPAddress.Dispose ();
+				textFieldIPAddress = null;
+			}
+
+			if (textFieldPort != null) {
+				textFieldPort.Dispose ();
+				textFieldPort = null;
 			}
 		}
 	}

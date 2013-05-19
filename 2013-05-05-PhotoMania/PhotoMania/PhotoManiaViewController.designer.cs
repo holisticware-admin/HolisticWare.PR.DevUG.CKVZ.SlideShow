@@ -13,12 +13,28 @@ namespace PhotoMania
 	{
 		[Outlet]
 		MonoTouch.UIKit.UIButton photoPicker { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UITextField textFieldIPAddress { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UITextField textFieldPort { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
 			if (photoPicker != null) {
 				photoPicker.Dispose ();
 				photoPicker = null;
+			}
+
+			if (textFieldIPAddress != null) {
+				textFieldIPAddress.Dispose ();
+				textFieldIPAddress = null;
+			}
+
+			if (textFieldPort != null) {
+				textFieldPort.Dispose ();
+				textFieldPort = null;
 			}
 		}
 	}

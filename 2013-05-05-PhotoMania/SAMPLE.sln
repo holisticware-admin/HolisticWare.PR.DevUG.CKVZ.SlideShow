@@ -56,6 +56,6 @@ Global
 		{F4E935B7-8151-4DEB-866D-EA75C70053C0}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = PhotoManiaMac\PhotoManiaMac.csproj
+		StartupItem = PhotoMania\PhotoMania.csproj
 	EndGlobalSection
 EndGlobal

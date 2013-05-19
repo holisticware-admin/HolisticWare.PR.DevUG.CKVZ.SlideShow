@@ -31,6 +31,10 @@ namespace PhotoMania
 
 			photoPicker.TouchUpInside += LoadImagePickerController;
 
+			//TODO: Mokee web service settings
+			//textFieldIPAddress
+			//textFieldPort
+
 		}
 
 		void LoadImagePickerController (object sender, EventArgs e)

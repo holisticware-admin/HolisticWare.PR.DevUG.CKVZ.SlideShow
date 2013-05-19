@@ -55,6 +55,11 @@ namespace PhotoManiaMac
 			buttonPhotoPicker.Activated += LoadPhotoToImageView;
 			buttonTrashPhoto.Activated += DeletePhotoFromImageView;
 			buttonSendPhoto.Activated += SendPhotoToWebService;
+
+
+			//TODO: Mokee web service settings
+			//textFieldIPAddress
+			//textFieldPort
 		}
 
 		void SendPhotoToWebService (object sender, EventArgs e)
