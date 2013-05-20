@@ -1,0 +1,30 @@
+﻿<ItemGroup>
+  <Compile Include="..\HolisticWare.SlideShow.DLL_BL_WF\Web References\TestUploader.Uploader.FileUploader\Reference.cs">
+    <Link>Web References\TestUploader.Uploader.FileUploader\Reference.cs</Link>
+    <AutoGen>True</AutoGen>
+    <DesignTime>True</DesignTime>
+    <DependentUpon>Reference.map</DependentUpon>
+  </Compile>
+  <None Include="..\HolisticWare.SlideShow.DLL_BL_WF\Web References\TestUploader.Uploader.FileUploader\WebServiceFileUploader.disco">
+    <Link>Web References\TestUploader.Uploader.FileUploader\WebServiceFileUploader.disco</Link>
+  </None>
+  <None Include="..\HolisticWare.SlideShow.DLL_BL_WF\Web References\TestUploader.Uploader.FileUploader\Reference.map">
+    <Link>Web References\TestUploader.Uploader.FileUploader\Reference.map</Link>
+    <Generator>MSDiscoCodeGenerator</Generator>
+    <LastGenOutput>Reference.cs</LastGenOutput>
+  </None>
+  <None Include="..\HolisticWare.SlideShow.DLL_BL_WF\Web References\TestUploader.Uploader.FileUploader\WebServiceFileUploader.wsdl">
+    <Link>Web References\TestUploader.Uploader.FileUploader\WebServiceFileUploader.wsdl</Link>
+  </None>
+  <WebReferences Include="Web References\" >
+  </WebReferences>
+  <WebReferenceUrl Include="http://localhost:21886/WebServiceFileUploader.asmx">
+    <UrlBehavior>Dynamic</UrlBehavior>
+    <RelPath>Web References\TestUploader.Uploader.FileUploader\</RelPath>
+    <UpdateFromURL>http://localhost:21886/WebServiceFileUploader.asmx</UpdateFromURL>
+    <ServiceLocationURL />
+    <CachedDynamicPropName />
+    <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+    <CachedSettingsPropName>HolisticWare_SlideShow_EXE_WF_TestUploader_Uploader_FileUploader_WebServiceFileUploader</CachedSettingsPropName>
+  </WebReferenceUrl>
+</ItemGroup>

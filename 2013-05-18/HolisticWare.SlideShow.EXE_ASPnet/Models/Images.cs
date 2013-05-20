@@ -13,7 +13,7 @@ namespace HolisticWare.SlideShow.EXE.Models
 	{
 		public Images()
 		{
-			string directoryOfImage = HttpContext.Current.Server.MapPath("~/App_Data/Images/");
+			string directoryOfImage = HttpContext.Current.Server.MapPath("~/Images/");
 			XDocument imageData = XDocument.Load(directoryOfImage + @"/ImageMetaData.xml");
 			IEnumerable<Image> images = 
 				from image in imageData.Descendants("image")
@@ -31,7 +31,7 @@ namespace HolisticWare.SlideShow.EXE.Models
 
 		public void Add(Image image, HttpPostedFileBase filebase)
 		{
-			string imagerep = HttpContext.Current.Server.MapPath("~/App_Data/Images/");
+			string imagerep = HttpContext.Current.Server.MapPath("~/Images/");
 			filebase.SaveAs(imagerep + image.Path);
 			this.Add(image);
 			XElement xml = new XElement("images", from i in this
@@ -48,7 +48,7 @@ namespace HolisticWare.SlideShow.EXE.Models
 
 		public void UpdateFileList()
 		{
-			string directory_images = HttpContext.Current.Server.MapPath("~/App_Data/Images/");
+			string directory_images = HttpContext.Current.Server.MapPath("~/Images/");
 
 			XElement xml_images = new XElement("images");
 

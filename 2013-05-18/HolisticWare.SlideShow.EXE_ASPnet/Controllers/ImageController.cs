@@ -16,9 +16,7 @@ namespace HolisticWare.SlideShow.EXE.Controllers
 
 		public ActionResult Index()
 		{
-
 			return View(new Images());
-
 		}
 
 		public ActionResult Add()

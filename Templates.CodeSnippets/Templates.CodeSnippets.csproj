@@ -55,9 +55,21 @@
     <Content Include="ASPNET.MVC\Views\Image\Index.aspx" />
     <Content Include="ASPNET.MVC\Site.Master.txt" />
     <Content Include="ASPNET.MVC\WebServiceFileUploader.asmx" />
+    <Content Include="csproj.source-linked.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="csproj.reordered.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="csproj.original.xml">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="ASPNET.MVC\Slides\EULA.doc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

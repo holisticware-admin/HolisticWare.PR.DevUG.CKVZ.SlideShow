@@ -84,20 +84,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Images\2013-02-16 10.09.11.jpg" />
-    <Content Include="App_Data\Images\IMG_1852.JPG" />
-    <Content Include="App_Data\Images\IMG_1975.JPG" />
-    <Content Include="App_Data\Images\IMG_2055.JPG" />
-    <Content Include="App_Data\Images\IMG_2057.JPG" />
-    <Content Include="App_Data\Images\IMG_2059.mp4" />
+    <Content Include="Images\2013-02-16 10.09.11.jpg" />
+    <Content Include="Images\IMG_1852.JPG" />
+    <Content Include="Images\IMG_1975.JPG" />
+    <Content Include="Images\IMG_2055.JPG" />
+    <Content Include="Images\IMG_2057.JPG" />
+    <Content Include="Images\IMG_2059.mp4" />
     <Content Include="ClientBin\HolisticWare.SlideShow.EXE_SL.xap" />
     <Content Include="Global.asax" />
     <Content Include="HolisticWare.SlideShow.EXE_SLTestPage.aspx" />
     <Content Include="HolisticWare.SlideShow.EXE_SLTestPage.html" />
-    <Content Include="App_Data\Images\2013-03-02 11.48.09.jpg" />
-    <Content Include="App_Data\Images\2013-03-02 11.48.45.jpg" />
-    <Content Include="App_Data\Images\379016_334589459899857_249723005053170_1492499_846590464_n.jpg" />
-    <Content Include="App_Data\Images\ImageMetaData.xml" />
+    <Content Include="Images\2013-03-02 11.48.09.jpg" />
+    <Content Include="Images\2013-03-02 11.48.45.jpg" />
+    <Content Include="Images\379016_334589459899857_249723005053170_1492499_846590464_n.jpg" />
+    <Content Include="Images\ImageMetaData.xml" />
     <Content Include="Silverlight.js" />
     <Content Include="Views\Image\Index.aspx" />
     <Content Include="Web.config" />
@@ -132,9 +132,11 @@
     <Content Include="Views\Web.config" />
     <Content Include="WebServiceFileUploader.asmx" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <None Include="App_Data\Images\EULA.doc" />
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\EULA.doc" />
     <None Include="readme.md" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
@@ -150,7 +152,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349C5851-65DF-11DA-9384-00065B846F21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>21886</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
