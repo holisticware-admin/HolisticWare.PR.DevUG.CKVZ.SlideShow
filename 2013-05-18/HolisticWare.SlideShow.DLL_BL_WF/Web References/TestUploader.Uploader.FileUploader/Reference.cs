@@ -35,7 +35,8 @@ namespace HolisticWare.SlideShow.BusinessLogic.TestUploader.Uploader.FileUploade
         
         /// <remarks/>
         public WebServiceFileUploader() {
-            this.Url = global::HolisticWare.SlideShow.BusinessLogic.Properties.Settings.Default.HolisticWare_SlideShow_EXE_WF_TestUploader_Uploader_FileUploader_WebServiceFileUploader;
+            //this.Url = global::HolisticWare.SlideShow.BusinessLogic.Properties.Settings.Default.HolisticWare_SlideShow_EXE_WF_TestUploader_Uploader_FileUploader_WebServiceFileUploader;
+            this.Url = "localhost:8080";
             if ((this.IsLocalFileSystemWebService(this.Url) == true)) {
                 this.UseDefaultCredentials = true;
                 this.useDefaultCredentialsSetExplicitly = false;
