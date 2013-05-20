@@ -13,8 +13,13 @@ namespace PhotoMania
 
 		private void AttachPicture()
 		{
-			imagePicker.SourceType = UIImagePickerControllerSourceType.Camera;
-			imagePicker.MediaTypes = UIImagePickerController.AvailableMediaTypes (UIImagePickerControllerSourceType.Camera);
+			//WARNING: If using phone, use
+			//imagePicker.SourceType = UIImagePickerControllerSourceType.Camera;
+			//imagePicker.MediaTypes = UIImagePickerController.AvailableMediaTypes (UIImagePickerControllerSourceType.Camera);
+
+			//WARNING: If using simulator, use
+			imagePicker.SourceType = UIImagePickerControllerSourceType.PhotoLibrary;
+			imagePicker.MediaTypes = UIImagePickerController.AvailableMediaTypes (UIImagePickerControllerSourceType.PhotoLibrary);
 
 			imagePicker.FinishedPickingMedia += Handle_FinishedPickingMedia;
 			imagePicker.Canceled += Handle_Canceled;
