@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 
 using System.IO;
-using HolisticWare.SlideShow.Model.TestUploader.Uploader.FileUploader;
+using HolisticWare.SlideShow.BusinessLogic.TestUploader.Uploader.FileUploader;
 using HolisticWare.SlideShow.EXE.ControllerViewModel;
 
 namespace HolisticWare.SlideShow.EXE
