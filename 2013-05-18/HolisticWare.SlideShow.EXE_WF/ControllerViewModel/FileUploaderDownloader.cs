@@ -5,7 +5,6 @@ using System.Text;
 
 
 using System.IO;
-using System.Windows.Forms;
 
 using HolisticWare.SlideShow.BusinessLogic.TestUploader.Uploader.FileUploader;
 
@@ -62,18 +61,18 @@ namespace HolisticWare.SlideShow.EXE.ControllerViewModel
 					string sTmp = srv.UploadFile(data, strFile);
 					// this will always say OK unless an error occurs,
 					// if an error occurs, the service returns the error message
-					MessageBox.Show("File Upload Status: " + sTmp, "File Upload");
+					System.Windows.Forms.MessageBox.Show("File Upload Status: " + sTmp, "File Upload");
 				}
 				else
 				{
 					// Display message if the file was too large to upload
-					MessageBox.Show("The file selected exceeds the size limit for uploads.", "File Size");
+					System.Windows.Forms.MessageBox.Show("The file selected exceeds the size limit for uploads.", "File Size");
 				}
 			}
 			catch (Exception ex)
 			{
 				// display an error message to the user
-				MessageBox.Show(ex.Message.ToString(), "Upload Error");
+				System.Windows.Forms.MessageBox.Show(ex.Message.ToString(), "Upload Error");
 			}
 
 			return;
