@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--Photo Mania View Controller - HolisticWare-->
+        <!--Photo Mania View Controller - HolisticWare PhotoMania-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="PhotoManiaViewController" sceneMemberID="viewController">
@@ -12,13 +12,6 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="HolisticWare PhotoMania" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RML-nL-TZb">
-                                <rect key="frame" x="65" y="105" width="191" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LlA-Xl-4ZZ">
                                 <rect key="frame" x="8" y="353" width="305" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -34,20 +27,20 @@
                                     <segue destination="LIH-xE-aS2" kind="push" id="Akl-fo-2R8"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ip address" minimumFontSize="17" id="Y5C-pW-aD2">
-                                <rect key="frame" x="65" y="230" width="191" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="192.168.1.67" borderStyle="roundedRect" placeholder="ip address" minimumFontSize="17" id="Y5C-pW-aD2">
+                                <rect key="frame" x="65" y="53" width="191" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="port" minimumFontSize="17" id="k1C-3u-I7m">
-                                <rect key="frame" x="65" y="268" width="191" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="8080" borderStyle="roundedRect" placeholder="port" minimumFontSize="17" id="k1C-3u-I7m">
+                                <rect key="frame" x="65" y="91" width="191" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Web Service Settings" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h74-gC-W8q">
-                                <rect key="frame" x="65" y="197" width="163" height="21"/>
+                                <rect key="frame" x="65" y="20" width="163" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -56,7 +49,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="HolisticWare" id="PyX-NA-PaF"/>
+                    <navigationItem key="navigationItem" title="HolisticWare PhotoMania" id="PyX-NA-PaF"/>
                     <connections>
                         <outlet property="photoPicker" destination="LlA-Xl-4ZZ" id="H4d-dT-Z3T"/>
                         <outlet property="textFieldIPAddress" destination="Y5C-pW-aD2" id="b5S-qD-wV7"/>

@@ -31,6 +31,17 @@ namespace PhotoMania
 
 			photoPicker.TouchUpInside += LoadImagePickerController;
 
+			//TEXT FILED DISMISSAL
+			var tap = new UITapGestureRecognizer ();
+			tap.AddTarget (() =>
+			               { 
+								textFieldIPAddress.ResignFirstResponder();
+								textFieldPort.ResignFirstResponder();
+							}
+						  );
+
+			this.View.AddGestureRecognizer (tap);
+
 			//TODO: Mokee web service settings
 			//textFieldIPAddress
 			//textFieldPort
