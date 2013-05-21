@@ -47,7 +47,19 @@ namespace PhotoMania
 		void SendImageToWebService (object sender, EventArgs e)
 		{
 			//TODO: Mokeeeee tu ti nastupas
-			new UIAlertView ("Image Publisher", "Do You Want To Publish Image?", null, "Cancel", "OK").Show ();
+			UIAlertView alert = new UIAlertView ("Image Publisher", "Do You Want To Publish Image?", null, "Cancel", "OK");
+			alert.Show ();
+
+			alert.Clicked += (object senderAlert, UIButtonEventArgs eAlert) => {
+
+				if(eAlert.ButtonIndex == 1)
+				{
+					//MOKE SEND TO WEB SERVICE
+					System.Console.WriteLine("ok clicked");
+				}
+			};
+
+
 			System.Console.WriteLine (NSBundle.MainBundle.BundlePath);
 
 		}
