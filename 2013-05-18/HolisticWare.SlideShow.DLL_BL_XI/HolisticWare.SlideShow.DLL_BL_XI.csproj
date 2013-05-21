@@ -56,8 +56,7 @@
     <None Include="..\HolisticWare.SlideShow.DLL_BL_WF\Web References\TestUploader.Uploader.FileUploader\WebServiceFileUploader.wsdl">
       <Link>Web References\TestUploader.Uploader.FileUploader\WebServiceFileUploader.wsdl</Link>
     </None>
-    <WebReferences Include="Web References\">
-    </WebReferences>
+    <WebReferences Include="Web References\" />
     <WebReferenceUrl Include="http://localhost:21886/WebServiceFileUploader.asmx">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\TestUploader.Uploader.FileUploader\</RelPath>
