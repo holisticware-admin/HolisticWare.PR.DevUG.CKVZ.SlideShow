@@ -1,0 +1,9 @@
+[Tue May 28 08:06:54 2013] [error] Not running mod-mono-server.exe because no MonoApplications, MonoApplicationsConfigFile or MonoApplicationConfigDir specified.
+[Tue May 28 08:06:54 2013] [notice] Apache/2.2.22 (Ubuntu) mod_mono/2.11 configured -- resuming normal operations
+Listening on: /tmp/mod_mono_server_global
+Root directory: /
+Listening on: /tmp/mod_mono_server_global
+Root directory: /
+Error: Address already in use
+Listening on: /tmp/mod_mono_server_rootsite
+Root directory: /var/www/riz-content-server-2013.holisticwarez.net

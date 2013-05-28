@@ -84,21 +84,23 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\2013-02-16 10.09.11.jpg" />
-    <Content Include="Images\IMG_1852.JPG" />
-    <Content Include="Images\IMG_1975.JPG" />
-    <Content Include="Images\IMG_2055.JPG" />
-    <Content Include="Images\IMG_2057.JPG" />
-    <Content Include="Images\IMG_2059.mp4" />
+    <Content Include="Slides\2013-02-16 10.09.11.jpg" />
+    <Content Include="Slides\IMG_1852.JPG" />
+    <Content Include="Slides\IMG_1975.JPG" />
+    <Content Include="Slides\IMG_2055.JPG" />
+    <Content Include="Slides\IMG_2057.JPG" />
+    <Content Include="Slides\IMG_2059.mp4" />
     <Content Include="ClientBin\HolisticWare.SlideShow.EXE_SL.xap" />
     <Content Include="Global.asax" />
     <Content Include="HolisticWare.SlideShow.EXE_SLTestPage.aspx" />
     <Content Include="HolisticWare.SlideShow.EXE_SLTestPage.html" />
-    <Content Include="Images\2013-03-02 11.48.09.jpg" />
-    <Content Include="Images\2013-03-02 11.48.45.jpg" />
-    <Content Include="Images\379016_334589459899857_249723005053170_1492499_846590464_n.jpg" />
-    <Content Include="Images\ImageMetaData.xml" />
+    <Content Include="Slides\2013-03-02 11.48.09.jpg" />
+    <Content Include="Slides\2013-03-02 11.48.45.jpg" />
+    <Content Include="Slides\379016_334589459899857_249723005053170_1492499_846590464_n.jpg" />
+    <Content Include="Slides\ImageMetaData.xml" />
     <Content Include="Silverlight.js" />
+    <Content Include="Slides\IMG_2405.JPG" />
+    <Content Include="Slides\Screen Shot 2013-05-20 at 1.29.09 PM.png" />
     <Content Include="Views\Image\Index.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -134,9 +136,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\EULA.doc" />
+    <None Include="Slides\EULA.doc" />
     <None Include="readme.md" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

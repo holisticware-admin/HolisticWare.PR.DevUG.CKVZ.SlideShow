@@ -17,7 +17,7 @@ namespace HolisticWare.SlideShow.EXE
 	// [System.Web.Script.Services.ScriptService]
 	public class WebServiceFileUploader : System.Web.Services.WebService
 	{
-		string path = @"~/Images/";
+		string path = @"~/Slides/";
 
 		// The class starts out with the default imports; I added System.IO to the
 		// defaults to support the use of file and memory streams. The web service 

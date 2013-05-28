@@ -11,48 +11,55 @@ namespace HolisticWare.SlideShow.EXE.Models
 {
 	public partial class Images : List<Image>
 	{
+		string directory_slides = HttpContext.Current.Server.MapPath("~/Slides/");
+
 		public Images()
 		{
-			string directoryOfImage = HttpContext.Current.Server.MapPath("~/Images/");
-			XDocument imageData = XDocument.Load(directoryOfImage + @"/ImageMetaData.xml");
-			IEnumerable<Image> images = 
-				from image in imageData.Descendants("image")
-					select new Image
-							(
-								image.Element("filename").Value
-							, image.Element("description").Value
-							);
-			this.AddRange(images.ToList<Image>());
+			//UpdateFileListFromFile();
 
 			UpdateFileList();
 
 			return;
 		}
 
+		private void UpdateFileListFromFile()
+		{
+			XDocument imageData = XDocument.Load(directory_slides + @"/ImageMetaData.xml");
+			IEnumerable<Image> images =
+				from image in imageData.Descendants("image")
+				select new Image
+						(
+						  image.Element("filename").Value
+						, image.Element("description").Value
+						);
+			this.AddRange(images.ToList<Image>());
+		}
+
 		public void Add(Image image, HttpPostedFileBase filebase)
 		{
-			string imagerep = HttpContext.Current.Server.MapPath("~/Images/");
-			filebase.SaveAs(imagerep + image.Path);
+			filebase.SaveAs(directory_slides + image.Path);
 			this.Add(image);
-			XElement xml = new XElement("images", from i in this
-												  orderby image.Path
-												  select new XElement("image",
-													  new XElement("filename", i.Path),
-													  new XElement("description", i.Description))
-													 );
+			XElement xml = new XElement
+								(
+								  "images"
+								, from i in this
+									  orderby image.Path
+									  select new XElement
+													(
+													  "image"
+													, new XElement("filename", i.Path),
+													  new XElement("description", i.Description)
+													)
+								);
 			XDocument doc = new XDocument(xml);
-			doc.Save(imagerep + "/ImageMetaData.xml");
+			doc.Save(directory_slides + "/ImageMetaData.xml");
 
 			return;
 		}
 
 		public void UpdateFileList()
 		{
-			string directory_images = HttpContext.Current.Server.MapPath("~/Images/");
-
-			XElement xml_images = new XElement("images");
-
-			DirectoryInfo di = new DirectoryInfo(directory_images);
+			DirectoryInfo di = new DirectoryInfo(directory_slides);
 			foreach (FileInfo fi in di.GetFiles())
 			{
 				string ext = fi.Extension.ToLower();
