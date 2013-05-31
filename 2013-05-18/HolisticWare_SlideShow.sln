@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolisticWare.SlideShow.EXE_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolisticWare.SlideShow.EXE_WPF", "HolisticWare.SlideShow.EXE_WPF\HolisticWare.SlideShow.EXE_WPF.csproj", "{E50452BD-70A1-429A-AB8A-3CB6915DF16A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolisticWare.SlideShow.EXE_MM", "HolisticWare.SlideShow.EXE_MM\HolisticWare.SlideShow.EXE_MM.csproj", "{F4E935B7-8151-4DEB-866D-EA75C70053C0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolisticWare.SlideShow.EXE_MM_20130521", "HolisticWare.SlideShow.EXE_MM\HolisticWare.SlideShow.EXE_MM_20130521.csproj", "{F4E935B7-8151-4DEB-866D-EA75C70053C0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core_2013", "Core_2013", "{8A3D095E-5ECB-46FB-99F9-0EE3C306DAFF}"
 EndProject

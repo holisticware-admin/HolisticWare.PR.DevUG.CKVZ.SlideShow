@@ -23,6 +23,11 @@
 					<nav>
 						<ul id="menu">
 							<li><%: Html.ActionLink("Home", "Index", "Home") %></li>
+							<!-- 
+								Action Link:
+									Link text, Action, Controller name
+							-->
+							<li><%: Html.ActionLink("Slide", "Index", "Slide") %></li>
 							<li><%: Html.ActionLink("About", "About", "Home") %></li>
 							<li><%: Html.ActionLink("Contact", "Contact", "Home") %></li>
 						</ul>
