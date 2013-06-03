@@ -34,12 +34,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="ASPNET.MVC\Controllers\ImageController.cs" />
-    <Compile Include="ASPNET.MVC\Models\Image.cs" />
-    <Compile Include="ASPNET.MVC\Models\Images.cs" />
+    <Compile Include="ASPNET.MVC\Controllers\SlideController.cs" />
+    <Compile Include="ASPNET.MVC\Models\Slide.cs" />
+    <Compile Include="ASPNET.MVC\Models\Slides.cs" />
     <Compile Include="ASPNET.MVC\WebServiceFileUploader.asmx.cs">
       <DependentUpon>WebServiceFileUploader.asmx</DependentUpon>
     </Compile>
+    <Compile Include="EXE_Common\Controllers\WebServiceClientProxy.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ASPNET.MVC\Slides\2013-02-16 10.09.11.jpg" />
@@ -52,8 +53,8 @@
     <Content Include="ASPNET.MVC\Slides\IMG_2055.JPG" />
     <Content Include="ASPNET.MVC\Slides\IMG_2057.JPG" />
     <Content Include="ASPNET.MVC\Slides\IMG_2059.mp4" />
-    <Content Include="ASPNET.MVC\Views\Image\Index.aspx" />
     <Content Include="ASPNET.MVC\Site.Master.txt" />
+    <Content Include="ASPNET.MVC\Views\Slide\Index.aspx" />
     <Content Include="ASPNET.MVC\WebServiceFileUploader.asmx" />
     <Content Include="WebServicesSOAPClientProxy\csproj.source-linked.xml">
       <SubType>Designer</SubType>
@@ -71,6 +72,9 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DLL_Common\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

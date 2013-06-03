@@ -5,9 +5,9 @@ using System.Web;
 
 namespace HolisticWare.SlideShow.EXE.Models
 {
-	public partial class Image
+	public partial class Slide
 	{
-		public Image(string path, string desc)
+		public Slide(string path, string desc)
 		{
 			Path = path;
 			Description = desc;

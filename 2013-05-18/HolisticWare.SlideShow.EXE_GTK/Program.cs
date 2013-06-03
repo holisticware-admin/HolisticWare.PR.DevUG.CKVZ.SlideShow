@@ -1,7 +1,7 @@
 using System;
 using Gtk;
 
-namespace HolisticWare.SlideShow.EXE_GTK
+namespace HolisticWare.SlideShow.EXE
 {
 	class MainClass
 	{

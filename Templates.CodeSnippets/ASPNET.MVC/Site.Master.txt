@@ -1,7 +1,28 @@
-﻿						<ul id="menu">
+﻿					<nav>
+						<ul id="menu">
 							<li><%: Html.ActionLink("Home", "Index", "Home") %></li>
 							<li><%: Html.ActionLink("About", "About", "Home") %></li>
 							<li><%: Html.ActionLink("Contact", "Contact", "Home") %></li>
-							<!-- holisticware -->
-							<li><%=Html.ActionLink("Images","Index","Image") %></li>
+							<!-- 
+								Action Link:
+									Link text, Action, Controller name
+							-->
+							<li><%: Html.ActionLink("Slide", "Index", "Slide") %></li>
 						</ul>
+					</nav>
+
+
+
+
+
+			<div id="menucontainer">
+			
+				<ul id="menu">              
+					<li><%: Html.ActionLink("Home", "Index", "Home")%></li>
+					<li><%: Html.ActionLink("About", "About", "Home")%></li>
+					<li><%=Html.ActionLink("Images","Index","Image") %></li>
+					<!-- holisticware -->
+					<li><%=Html.ActionLink("Slides","Index","Slide") %></li>
+				</ul>
+			
+			</div>
