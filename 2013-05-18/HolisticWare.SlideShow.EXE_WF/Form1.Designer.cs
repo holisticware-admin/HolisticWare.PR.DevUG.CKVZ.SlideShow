@@ -37,9 +37,9 @@
 			// 
 			// buttonBrowse
 			// 
-			this.buttonBrowse.Location = new System.Drawing.Point(81, 28);
+			this.buttonBrowse.Location = new System.Drawing.Point(345, 12);
 			this.buttonBrowse.Name = "buttonBrowse";
-			this.buttonBrowse.Size = new System.Drawing.Size(207, 23);
+			this.buttonBrowse.Size = new System.Drawing.Size(130, 23);
 			this.buttonBrowse.TabIndex = 0;
 			this.buttonBrowse.Text = "Browse?Pick [Take]";
 			this.buttonBrowse.UseVisualStyleBackColor = true;
@@ -52,16 +52,16 @@
 			// 
 			// textBoxFileName
 			// 
-			this.textBoxFileName.Location = new System.Drawing.Point(12, 57);
+			this.textBoxFileName.Location = new System.Drawing.Point(12, 15);
 			this.textBoxFileName.Name = "textBoxFileName";
-			this.textBoxFileName.Size = new System.Drawing.Size(276, 20);
+			this.textBoxFileName.Size = new System.Drawing.Size(327, 20);
 			this.textBoxFileName.TabIndex = 1;
 			// 
 			// buttonUpload
 			// 
-			this.buttonUpload.Location = new System.Drawing.Point(213, 83);
+			this.buttonUpload.Location = new System.Drawing.Point(345, 41);
 			this.buttonUpload.Name = "buttonUpload";
-			this.buttonUpload.Size = new System.Drawing.Size(75, 23);
+			this.buttonUpload.Size = new System.Drawing.Size(130, 23);
 			this.buttonUpload.TabIndex = 2;
 			this.buttonUpload.Text = "Upload";
 			this.buttonUpload.UseVisualStyleBackColor = true;
@@ -69,9 +69,9 @@
 			// 
 			// textBoxHostPort
 			// 
-			this.textBoxHostPort.Location = new System.Drawing.Point(12, 83);
+			this.textBoxHostPort.Location = new System.Drawing.Point(12, 41);
 			this.textBoxHostPort.Name = "textBoxHostPort";
-			this.textBoxHostPort.Size = new System.Drawing.Size(139, 20);
+			this.textBoxHostPort.Size = new System.Drawing.Size(327, 20);
 			this.textBoxHostPort.TabIndex = 3;
 			this.textBoxHostPort.Text = "localhost:8080";
 			// 
@@ -79,7 +79,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(292, 125);
+			this.ClientSize = new System.Drawing.Size(487, 75);
 			this.Controls.Add(this.textBoxHostPort);
 			this.Controls.Add(this.buttonUpload);
 			this.Controls.Add(this.textBoxFileName);

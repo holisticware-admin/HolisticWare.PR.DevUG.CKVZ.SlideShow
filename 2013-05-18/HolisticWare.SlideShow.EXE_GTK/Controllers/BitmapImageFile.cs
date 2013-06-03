@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace HolisticWare.SlideShow.Model
+namespace HolisticWare.SlideShow.EXE.Controllers
 {
-	class Class1
+	public partial class BitmapImageFile
 	{
 	}
 }
