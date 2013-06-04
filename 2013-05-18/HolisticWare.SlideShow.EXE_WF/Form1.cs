@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.IO;
 using HolisticWare.SlideShow.BusinessLogic.TestUploader.Uploader.FileUploader;
 using HolisticWare.SlideShow.EXE.ControllerViewModel;
+using HolisticWare.SlideShow.EXE.Controllers;
 
 namespace HolisticWare.SlideShow.EXE
 {
@@ -19,6 +20,10 @@ namespace HolisticWare.SlideShow.EXE
 		public Form1()
 		{
 			InitializeComponent();
+
+			textBoxHostPort.Text = WebServiceClientProxy.Url;
+
+			return;
 		}
 
 

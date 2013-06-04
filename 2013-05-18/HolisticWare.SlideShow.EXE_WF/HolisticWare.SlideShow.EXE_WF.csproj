@@ -85,8 +85,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ControllerViewModel\BusinessLogicObjects.cs" />
-    <Compile Include="ControllerViewModel\FileUploaderDownloader.cs" />
+    <Compile Include="..\HolisticWare.SlideShow.EXE_GTK\Controllers\BitmapImageFile.cs">
+      <Link>Controllers\BitmapImageFile.cs</Link>
+    </Compile>
+    <Compile Include="..\HolisticWare.SlideShow.EXE_GTK\Controllers\FileUploaderDownloader.cs">
+      <Link>Controllers\FileUploaderDownloader.cs</Link>
+    </Compile>
+    <Compile Include="..\HolisticWare.SlideShow.EXE_GTK\Controllers\WebServiceClientProxy.cs">
+      <Link>Controllers\WebServiceClientProxy.cs</Link>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

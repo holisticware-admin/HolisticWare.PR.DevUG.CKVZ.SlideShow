@@ -73,7 +73,6 @@
 			this.textBoxHostPort.Name = "textBoxHostPort";
 			this.textBoxHostPort.Size = new System.Drawing.Size(327, 20);
 			this.textBoxHostPort.TabIndex = 3;
-			this.textBoxHostPort.Text = "localhost:8080";
 			// 
 			// Form1
 			// 
