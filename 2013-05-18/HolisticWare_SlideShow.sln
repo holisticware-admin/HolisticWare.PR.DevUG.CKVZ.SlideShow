@@ -1126,6 +1126,6 @@ Global
 		{E598EA3C-1C0A-42DD-993A-D151535DAC38} = {F289C8D1-C102-49CA-A275-38AB6C0A4EF8}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = HolisticWare.SlideShow.EXE_ASPnet_MVC4\HolisticWare.SlideShow.EXE_ASPnet_MVC4.csproj
+		StartupItem = HolisticWare.SlideShow.EXE_GTK\HolisticWare.SlideShow.EXE_GTK.csproj
 	EndGlobalSection
 EndGlobal
