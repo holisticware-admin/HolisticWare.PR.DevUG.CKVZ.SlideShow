@@ -2,8 +2,10 @@ using System;
 using System.Drawing;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+using Xamarin.Media;
+using System.Threading.Tasks;
 
-namespace HolisticWare.SlideShow.EXE_XI
+namespace HolisticWare.SlideShow.EXE
 {
 	public partial class HolisticWare_SlideShow_EXE_XIViewController : UIViewController
 	{
@@ -44,12 +46,44 @@ namespace HolisticWare.SlideShow.EXE_XI
 			
 				System.Console.WriteLine ("Camera");
 
+				var picker = new MediaPicker ();
+				//           new MediaPicker (this); on Android
+				if (!picker.IsCameraAvailable)
+					Console.WriteLine ("No camera!");
+				else {
+					picker.TakePhotoAsync (new StoreCameraMediaOptions {
+						Name = "test.jpg",
+						Directory = "MediaPickerSample"
+					}).ContinueWith (t => {
+						if (t.IsCanceled) {
+							Console.WriteLine ("User canceled");
+							return;
+						}
+						Console.WriteLine (t.Result.Path);
+						imageView.Image = new UIImage(t.Result.Path);
+					}, TaskScheduler.FromCurrentSynchronizationContext());
+				}
+
+
 
 			} else if (e.ButtonIndex == 2) {
 			
 				System.Console.WriteLine ("Library");
 
-			}
+				var picker = new MediaPicker ();
+				//           new MediaPicker (this); on Android
+			
+				picker.PickPhotoAsync()
+					.ContinueWith (t => {
+						if (t.IsCanceled) {
+							Console.WriteLine ("User canceled");
+							return;
+						}
+						Console.WriteLine (t.Result.Path);
+						imageView.Image = new UIImage(t.Result.Path);
+					}, TaskScheduler.FromCurrentSynchronizationContext());
+				}
+
 		}
 
 		public override void ViewWillAppear (bool animated)

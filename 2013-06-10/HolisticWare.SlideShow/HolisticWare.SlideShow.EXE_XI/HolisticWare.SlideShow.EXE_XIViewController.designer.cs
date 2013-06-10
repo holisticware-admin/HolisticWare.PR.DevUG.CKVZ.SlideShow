@@ -6,7 +6,7 @@
 //
 using MonoTouch.Foundation;
 
-namespace HolisticWare.SlideShow.EXE_XI
+namespace HolisticWare.SlideShow.EXE
 {
 	[Register ("HolisticWare_SlideShow_EXE_XIViewController")]
 	partial class HolisticWare_SlideShow_EXE_XIViewController
