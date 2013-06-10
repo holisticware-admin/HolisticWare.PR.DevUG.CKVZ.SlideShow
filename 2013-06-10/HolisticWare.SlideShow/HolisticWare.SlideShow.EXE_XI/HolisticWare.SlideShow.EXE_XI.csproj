@@ -80,7 +80,8 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
-    <Reference Include="Xamarin.Mobile">
+    <Reference Include="Xamarin.Mobile, Version=0.6.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\xamarin.mobile-0.6.3\lib\ios\Xamarin.Mobile.dll</HintPath>
     </Reference>
   </ItemGroup>

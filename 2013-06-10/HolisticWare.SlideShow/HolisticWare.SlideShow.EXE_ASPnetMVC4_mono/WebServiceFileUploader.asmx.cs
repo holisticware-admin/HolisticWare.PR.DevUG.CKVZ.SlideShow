@@ -10,7 +10,7 @@ namespace HolisticWare.SlideShow.EXE
 	/// <summary>
 	/// Summary description for WebServiceFileUploader
 	/// </summary>
-	[WebService(Namespace = "http://tempuri.org/")]
+	[WebService(Namespace = "http://holisticware.net/")]
 	[WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
 	[System.ComponentModel.ToolboxItem(false)]
 	// To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 

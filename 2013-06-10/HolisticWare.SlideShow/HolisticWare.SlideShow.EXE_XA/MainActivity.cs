@@ -15,10 +15,9 @@ namespace HolisticWare.SlideShow.EXE
 	[Activity (Label = "HolisticWare.SlideShow.EXE", MainLauncher = true)]
 	public class MainActivity : Activity
 	{
-
 		ImageView imageView;
-		Bitmap b;
 		MemoryStream stream;
+		byte[] image_bytes = null;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -47,76 +46,90 @@ namespace HolisticWare.SlideShow.EXE
 			builder.SetMessage("Camera Or Library");
 			builder.SetCancelable(false);
 
-			builder.SetPositiveButton("Camera"
-			                          , 
-			                          delegate 
-			                          { 
-										var picker = new MediaPicker (this);
+			builder.SetPositiveButton
+				(
+				  "Camera" 
+				, delegate 
+					{ 
+						var picker = new MediaPicker (this);
 							
-										if (!picker.IsCameraAvailable)
-										Console.WriteLine ("No camera!");
-										else {
-											picker.TakePhotoAsync (new StoreCameraMediaOptions {
-											Name = "test.jpg",
-											Directory = "MediaPickerSample"
-											}).ContinueWith (t => {
-							
-											if (t.IsCanceled) {
-											Console.WriteLine ("User canceled");
-											return;
+						if (!picker.IsCameraAvailable)
+						{
+							Console.WriteLine ("No camera!");
+						}
+						else 
+						{
+							picker.TakePhotoAsync 
+									(
+									  new StoreCameraMediaOptions 
+											{
+											  Name = "test.jpg"
+											, Directory = "MediaPickerSample"
 											}
-
-											Console.WriteLine (t.Result.Path);
-											b = BitmapFactory.DecodeFile(t.Result.Path);
-											imageView.SetImageBitmap(b);
-
-											}, TaskScheduler.FromCurrentSynchronizationContext());
-										}
+									).ContinueWith 
+											(
+											  t => 
+												{							
+													if (t.IsCanceled) 
+													{
+														Console.WriteLine ("User canceled");
+									
+													return;
+													}
+													Console.WriteLine(t.Result.Path);
 										
-										//MOKEEEEEE Bitmap TO Array
-										stream = new MemoryStream();
-										b.Compress(Bitmap.CompressFormat.Png, 0, stream);
-										byte[] bitmapData = stream.ToArray();
-
+												}
+												, TaskScheduler.FromCurrentSynchronizationContext()
+												);
 										}
+									  }
 			);
 
-			builder.SetNeutralButton("Library"
-			                         	,
-			                         delegate 
-			                         {
-										var picker = new MediaPicker (this);
-								//           new MediaPicker (this); on Android
+			builder.SetNeutralButton
+				(
+				  "Library"
+				, delegate 
+					{
+						var picker = new MediaPicker (this);
+						//           new MediaPicker (this); on Android
 
-										picker.PickPhotoAsync()
+						picker.PickPhotoAsync()
 											.ContinueWith (t => {
 												if (t.IsCanceled) {
 												Console.WriteLine ("User canceled");
 												return;
 										}
-
 										Console.WriteLine (t.Result.Path);
-										b = BitmapFactory.DecodeFile(t.Result.Path);
+
+										Bitmap b = BitmapFactory.DecodeFile(t.Result.Path);
 										imageView.SetImageBitmap(b);
 
-									}, TaskScheduler.FromCurrentSynchronizationContext());
+										image_bytes = ImageViewToByteArray(t.Result.Path);
 
-									//MOKEEEEEE Bitmap TO Array
-									stream = new MemoryStream();
-									b.Compress(Bitmap.CompressFormat.Png, 0, stream);
-									byte[] bitmapData = stream.ToArray();
-
-							}
-		
+									}
+									, TaskScheduler.FromCurrentSynchronizationContext()
+									);
+							}		
 			);
-
-
 
 			builder.SetNegativeButton("Cancel",delegate {});
 
 			builder.Show();
+
+			return;
 		}
 
+		private byte[] ImageViewToByteArray(string path)
+		{
+			Bitmap b = BitmapFactory.DecodeFile(path);
+
+			MemoryStream stream = new MemoryStream();
+			b.Compress(Bitmap.CompressFormat.Png, 0, stream);
+
+			byte[] bytes = stream.ToArray();
+
+			return bytes;
+		}
 
 	}
 }
