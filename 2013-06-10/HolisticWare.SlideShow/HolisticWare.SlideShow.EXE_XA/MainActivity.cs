@@ -6,9 +6,9 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
-namespace HolisticWare.SlideShow.EXE_XA
+namespace HolisticWare.SlideShow.EXE
 {
-	[Activity (Label = "HolisticWare.SlideShow.EXE_XA", MainLauncher = true)]
+	[Activity (Label = "HolisticWare.SlideShow.EXE", MainLauncher = true)]
 	public class MainActivity : Activity
 	{
 		int count = 1;

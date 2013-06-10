@@ -16,6 +16,7 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>false</UseIISExpress>
+    <SilverlightApplicationList>{7483E27E-E9CE-4B58-A6AD-10851C1E88B8}|..\HolisticWare.SlideShow.EXE_SL\HolisticWare.SlideShow.EXE_SL.csproj|ClientBin|False</SilverlightApplicationList>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -168,6 +169,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ClientBin\HolisticWare.SlideShow.EXE_SL.xap" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -224,6 +226,8 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="HolisticWare.SlideShow.EXE_SLTestPage.aspx" />
+    <Content Include="HolisticWare.SlideShow.EXE_SLTestPage.html" />
     <Content Include="lib\Antlr3.Runtime.dll" />
     <Content Include="lib\DotNetOpenAuth.AspNet.dll" />
     <Content Include="lib\DotNetOpenAuth.AspNet.xml" />
@@ -291,6 +295,7 @@
     <Content Include="Scripts\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Silverlight.js" />
     <Content Include="Slides\CropperCapture28.png" />
     <Content Include="Slides\CropperCapture29.png" />
     <Content Include="Views\Slide\Index.aspx" />

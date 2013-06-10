@@ -1,0 +1,6 @@
+﻿<TextBlock Height="30" Margin="27,34,346,0" Name="labelUrlWebService" Text="Url:" VerticalAlignment="Top" />
+<TextBox Height="72" HorizontalAlignment="Right" Margin="0,70,-12,0" Name="textBoxUrlWebService" Text="http://" VerticalAlignment="Top" Width="460" />
+<Button Content="Choose / Take" Height="72" Margin="18,355,0,0" Name="buttonBoxBrowsePickTake" VerticalAlignment="Top" />
+<TextBlock Height="30" Margin="27,241,0,0" Name="labelImageName" Text="File:" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83" />
+<TextBox Height="72" HorizontalAlignment="Right" Margin="0,277,-16,0" Name="textBoxImageName" Text="*.jpg, *.jpeg, *.png" VerticalAlignment="Top" Width="460" />
+<Button Content="Send/Upload" Height="72" Margin="12,148,6,0" Name="buttonSendUploadToUrlWebService" VerticalAlignment="Top" />

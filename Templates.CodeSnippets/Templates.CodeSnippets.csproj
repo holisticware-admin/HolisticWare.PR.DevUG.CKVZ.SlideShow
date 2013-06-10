@@ -41,9 +41,6 @@
       <DependentUpon>WebServiceFileUploader.asmx</DependentUpon>
     </Compile>
     <Compile Include="EXE_Common\Controllers\WebServiceClientProxy.cs" />
-    <Compile Include="WebServiceFileUploader.asmx.cs">
-      <DependentUpon>WebServiceFileUploader.asmx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="ASPNET.MVC\Site.Master.txt" />
@@ -55,12 +52,23 @@
     </Content>
     <Content Include="ASPNET.MVC\Views\Slide\SilverlightClient.aspx" />
     <Content Include="ASPNET.MVC\WebServiceFileUploader.asmx" />
+    <Content Include="EXE_SL\Screen.xaml.txt">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EXE_WPF\Screen.xaml.txt">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EXE_WP\Screen.xaml.txt">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
     <Content Include="Project.Snippets\WebServicesSOAPClientProxy\csproj.original.xml" />
     <Content Include="Project.Snippets\WebServicesSOAPClientProxy\csproj.reordered.xml" />
     <Content Include="Project.Snippets\WebServicesSOAPClientProxy\csproj.source-linked.xml">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="WebServiceFileUploader.asmx" />
     <Content Include="WebServicesSOAPClientProxy\01-original.csproj.xml">
       <SubType>Designer</SubType>
     </Content>

@@ -5,12 +5,12 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{AF6251A7-27BA-4217-B15F-D6BD9C96013E}</ProjectGuid>
+    <ProjectGuid>{8FC93884-2990-43EE-883F-1B2F5D39D510}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HolisticWare.SlideShow.DLL_BL_Scripting</RootNamespace>
-    <AssemblyName>HolisticWare.SlideShow.DLL_BL_Scripting</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <RootNamespace>HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPG_GTK_MM</RootNamespace>
+    <AssemblyName>HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPG_GTK_MM</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -35,27 +35,12 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="Docs\error.log-after-restart.txt" />
-    <Content Include="Docs\Home Page - My ASP.NET MVC Application.htm" />
-    <Content Include="Docs\Home Page - My ASP.NET MVC Application.local.htm" />
-    <Content Include="Docs\Home Page - My ASP.NET MVC Application.local_files\jquery-1.7.1.js" />
-    <Content Include="Docs\Home Page - My ASP.NET MVC Application.local_files\modernizr-2.5.3.js" />
-    <Content Include="Docs\Home Page - My ASP.NET MVC Application_files\jquery-1.7.1.js" />
-    <Content Include="Docs\Home Page - My ASP.NET MVC Application_files\modernizr-2.5.3.js" />
-    <None Include="browse.bat" />
-    <None Include="MonoAWS.ppk" />
-    <None Include="pscp-to-server.aws-mono.secure.bat" />
-    <None Include="putty-holisticware-aws-mono.secure.bat" />
-  </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
