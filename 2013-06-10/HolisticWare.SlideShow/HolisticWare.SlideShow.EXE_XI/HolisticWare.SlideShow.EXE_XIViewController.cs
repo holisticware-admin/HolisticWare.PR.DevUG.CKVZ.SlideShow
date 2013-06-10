@@ -2,11 +2,15 @@ using System;
 using System.Drawing;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+using Xamarin.Media;
+using System.Threading.Tasks;
 
-namespace HolisticWare.SlideShow.EXE_XI
+namespace HolisticWare.SlideShow.EXE
 {
 	public partial class HolisticWare_SlideShow_EXE_XIViewController : UIViewController
 	{
+		UIImage image;
+
 		public HolisticWare_SlideShow_EXE_XIViewController (IntPtr handle) : base (handle)
 		{
 		}
@@ -44,12 +48,70 @@ namespace HolisticWare.SlideShow.EXE_XI
 			
 				System.Console.WriteLine ("Camera");
 
+				var picker = new MediaPicker ();
+				//           new MediaPicker (this); on Android
+				if (!picker.IsCameraAvailable)
+					Console.WriteLine ("No camera!");
+				else {
+					picker.TakePhotoAsync (new StoreCameraMediaOptions {
+						Name = "test.jpg",
+						Directory = "MediaPickerSample"
+					}).ContinueWith (t => {
+						if (t.IsCanceled) {
+							Console.WriteLine ("User canceled");
+							return;
+						}
+						Console.WriteLine (t.Result.Path);
+						imageView.Image = new UIImage(t.Result.Path);
+					}, TaskScheduler.FromCurrentSynchronizationContext());
+				}
 
-			} else if (e.ButtonIndex == 2) {
+				//MOKEEEEEEEEE UIImage To ByteArray
+				image = imageView.Image;
+
+				using (NSData imageData = image.AsJPEG()) 
+				{
+					Byte[] myByteArray = new byte[imageData.Length];
+					System.Runtime.InteropServices.Marshal.Copy
+						(imageData.Bytes, myByteArray, 0, Convert.ToInt32 (imageData.Length));
+
+					//Mokeee
+				}
+
+				image.Dispose ();
+
+			} 
+			else if (e.ButtonIndex == 2) {
 			
 				System.Console.WriteLine ("Library");
 
+				var picker = new MediaPicker ();
+				//           new MediaPicker (this); on Android
+			
+				picker.PickPhotoAsync()
+					.ContinueWith (t => {
+						if (t.IsCanceled) {
+							Console.WriteLine ("User canceled");
+							return;
+						}
+						Console.WriteLine (t.Result.Path);
+						imageView.Image = new UIImage(t.Result.Path);
+					}, TaskScheduler.FromCurrentSynchronizationContext());
+				}
+
+			//MOKEEEEEEEEE UIImage To ByteArray
+			image = imageView.Image;
+
+			using (NSData imageData = image.AsJPEG()) 
+			{
+				Byte[] myByteArray = new byte[imageData.Length];
+				System.Runtime.InteropServices.Marshal.Copy
+					(imageData.Bytes, myByteArray, 0, Convert.ToInt32 (imageData.Length));
+
+				//Mokeee
 			}
+
+			image.Dispose ();
 		}
 
 		public override void ViewWillAppear (bool animated)
