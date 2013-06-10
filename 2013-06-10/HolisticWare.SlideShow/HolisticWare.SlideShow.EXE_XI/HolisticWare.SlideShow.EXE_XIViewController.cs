@@ -24,6 +24,32 @@ namespace HolisticWare.SlideShow.EXE_XI
 			base.ViewDidLoad ();
 			
 			// Perform any additional setup after loading the view, typically from a nib.
+			buttonBoxBrowsePickTake.Clicked += ChooseOrTakePicture;
+
+
+		}
+
+		void ChooseOrTakePicture (object sender, EventArgs e)
+		{
+			UIAlertView alert = new UIAlertView ("Media Chooser", "Camera Or Library", null, "Cancel", "Camera", "Library");
+			alert.Show ();
+
+			alert.Clicked += MediaChooser;
+
+		}
+
+		void MediaChooser (object sender, UIButtonEventArgs e)
+		{
+			if (e.ButtonIndex == 1) {
+			
+				System.Console.WriteLine ("Camera");
+
+
+			} else if (e.ButtonIndex == 2) {
+			
+				System.Console.WriteLine ("Library");
+
+			}
 		}
 
 		public override void ViewWillAppear (bool animated)
