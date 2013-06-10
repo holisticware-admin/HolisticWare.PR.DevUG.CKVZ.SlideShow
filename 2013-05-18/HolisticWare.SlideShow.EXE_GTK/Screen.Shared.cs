@@ -7,7 +7,7 @@ using Gtk;
 
 namespace HolisticWare.SlideShow.EXE
 {
-	public partial class MainWindow
+	public partial class Screen
 	{
 		void buttonSend_Clicked(object sender, EventArgs e)
 		{

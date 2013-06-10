@@ -8,7 +8,7 @@ namespace HolisticWare.SlideShow.EXE
 		public static void Main (string[] args)
 		{
 			Application.Init ();
-			MainWindow win = new MainWindow ();
+			Screen win = new Screen ();
 			win.Show ();
 			Application.Run ();
 		}

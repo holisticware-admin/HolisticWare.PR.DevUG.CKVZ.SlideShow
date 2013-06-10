@@ -4,18 +4,15 @@ using Gtk;
 namespace HolisticWare.SlideShow.EXE
 {
 
-	public partial class MainWindow : Gtk.Window
+	public partial class Screen : Gtk.Window
 	{
 		private Fixed fix = null;
-
 		private Entry textBoxLoad = null;
 		private Button buttonLoad = null;
-
 		private Entry textBoxSend = null;
 		private Button buttonSend = null;
 
-
-		public MainWindow()
+		public Screen()
 			: base(Gtk.WindowType.Toplevel)
 		{
 			Build();

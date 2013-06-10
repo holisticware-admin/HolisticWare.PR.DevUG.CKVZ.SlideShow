@@ -7,9 +7,9 @@
 	d:DesignHeight="125" d:DesignWidth="572" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk">
 
 	<Grid x:Name="LayoutRoot" Background="White" Height="92" Width="542">
-		<Button Content="Browse / Pick [Take]" Height="23" HorizontalAlignment="Left" Margin="301,12,0,0" Name="buttonBrowse" VerticalAlignment="Top" Width="137" Click="buttonBrowse_Click" />
-		<Button Content="Upload" Height="23" HorizontalAlignment="Left" Margin="301,41,0,0" Name="buttonUpload" VerticalAlignment="Top" Width="137" Click="buttonUpload_Click" />
-		<TextBox Height="23" HorizontalAlignment="Left" Margin="12,12,0,0" Name="textBoxFileName" VerticalAlignment="Top" Width="283" />
+		<TextBox Height="23" HorizontalAlignment="Left" Margin="12,12,0,0" Name="textImageNamePickedTaken" VerticalAlignment="Top" Width="283" />
+		<Button Content="Browse / Pick [Take]" Height="23" HorizontalAlignment="Left" Margin="301,12,0,0" Name="buttonBoxBrowsePickTake" VerticalAlignment="Top" Width="137" Click="buttonBrowse_Click" />
 		<TextBox Height="23" HorizontalAlignment="Left" Margin="12,41,0,0" Name="textBoxUrlWebService" VerticalAlignment="Top" Width="283" />
+		<Button Content="Upload" Height="23" HorizontalAlignment="Left" Margin="301,41,0,0" Name="buttonSendUploadToUrlWebService" VerticalAlignment="Top" Width="137" Click="buttonUpload_Click" />
 	</Grid>
 </UserControl>

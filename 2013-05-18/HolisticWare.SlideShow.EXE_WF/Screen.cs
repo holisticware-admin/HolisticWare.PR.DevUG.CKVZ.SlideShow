@@ -13,9 +13,9 @@ using HolisticWare.SlideShow.BusinessLogic;
 
 namespace HolisticWare.SlideShow.EXE
 {
-	public partial class Form1 : Form
+	public partial class Screen : Form
 	{
-		public Form1()
+		public Screen()
 		{
 			InitializeComponent();
 
@@ -91,7 +91,7 @@ namespace HolisticWare.SlideShow.EXE
 			else
 			{
 				// SL - N/A
-				textBoxFileName.Text = openFileDialog1.FileName;
+				textImageNamePickedTaken.Text = openFileDialog1.FileName;
 				// textBoxFileName.Text = openFileDialog1.File.ToString();
 			}
 
@@ -116,10 +116,10 @@ namespace HolisticWare.SlideShow.EXE
 		/// <param name="e"></param>
 		private void btnUpload_Click(object sender, EventArgs e)
 		{
-			if (textBoxFileName.Text != string.Empty)
+			if (textImageNamePickedTaken.Text != string.Empty)
 			{
 				string webserivce = textBoxUrlWebService.Text;
-				string filename = textBoxFileName.Text;
+				string filename = textImageNamePickedTaken.Text;
 
 				fud = new FileUploaderDownloader();
 				fud.UploadFile(webserivce, filename);

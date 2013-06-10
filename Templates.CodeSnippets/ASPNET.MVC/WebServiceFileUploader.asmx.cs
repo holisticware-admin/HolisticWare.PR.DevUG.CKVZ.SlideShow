@@ -10,14 +10,14 @@ namespace HolisticWare.SlideShow.EXE
 	/// <summary>
 	/// Summary description for WebServiceFileUploader
 	/// </summary>
-	[WebService(Namespace = "http://tempuri.org/")]
+	[WebService(Namespace = "http://holisticware.net/")]
 	[WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
 	[System.ComponentModel.ToolboxItem(false)]
 	// To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
 	// [System.Web.Script.Services.ScriptService]
 	public class WebServiceFileUploader : System.Web.Services.WebService
 	{
-		string path = @"~/Images/";
+		string path = @"~/Slides/";
 
 		// The class starts out with the default imports; I added System.IO to the
 		// defaults to support the use of file and memory streams. The web service 

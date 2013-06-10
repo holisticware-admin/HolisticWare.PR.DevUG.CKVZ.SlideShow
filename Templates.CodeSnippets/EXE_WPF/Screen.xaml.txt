@@ -1,1 +1,4 @@
-﻿/* File Created: June 10, 2013 */
+﻿			<TextBox Height="72" HorizontalAlignment="Right" Margin="0,6,0,0" Name="textBoxUrlWebService" Text="http://" VerticalAlignment="Top" Width="460" />
+			<Button Content="Upload" Height="79" Margin="0,71,12,0" Name="buttonSendUploadToUrlWebService" VerticalAlignment="Top" />
+			<TextBox Height="72" HorizontalAlignment="Right" Margin="0,137,0,0" Name="textBox2" Text=".jpeg, .jpg, .png" VerticalAlignment="Top" Width="460" />
+			<Button Content="Browse / Pick [Take]" Height="79" Margin="0,202,12,0" Name="buttonBoxBrowsePickTake" VerticalAlignment="Top" />

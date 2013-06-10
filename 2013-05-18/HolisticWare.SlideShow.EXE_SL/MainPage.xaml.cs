@@ -72,7 +72,7 @@ namespace HolisticWare.SlideShow.EXE_SL
 			{
 				// SL - N/A
 				// textBoxFileName.Text = openFileDialog1.FileName;
-				textBoxFileName.Text = openFileDialog1.File.ToString();
+				textImageNamePickedTaken.Text = openFileDialog1.File.ToString();
 			}
 
 			return;
@@ -82,10 +82,10 @@ namespace HolisticWare.SlideShow.EXE_SL
 
 		private void buttonUpload_Click(object sender, RoutedEventArgs e)
 		{
-			if (textBoxFileName.Text != string.Empty)
+			if (textImageNamePickedTaken.Text != string.Empty)
 			{
 				string webserivce = textBoxUrlWebService.Text;
-				string filename = textBoxFileName.Text;
+				string filename = textImageNamePickedTaken.Text;
 				string[] retval = null;
 
 				fud = new FileUploaderDownloader();
@@ -94,7 +94,7 @@ namespace HolisticWare.SlideShow.EXE_SL
 			}
 			else
 			{
-				// MessageBox.Show("You must select a file first.", "No File Selected");
+				// MessageBox.Show("Select a file first.", "No File Selected");
 				MessageBox.Show(null, "No File Selected");
 
 			}
