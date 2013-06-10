@@ -29,10 +29,9 @@
 		private void InitializeComponent()
 		{
 			this.buttonBrowse = new System.Windows.Forms.Button();
-			this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
 			this.textBoxFileName = new System.Windows.Forms.TextBox();
 			this.buttonUpload = new System.Windows.Forms.Button();
-			this.textBoxHostPort = new System.Windows.Forms.TextBox();
+			this.textBoxUrlWebService = new System.Windows.Forms.TextBox();
 			this.SuspendLayout();
 			// 
 			// buttonBrowse
@@ -44,11 +43,6 @@
 			this.buttonBrowse.Text = "Browse?Pick [Take]";
 			this.buttonBrowse.UseVisualStyleBackColor = true;
 			this.buttonBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
-			// 
-			// openFileDialog1
-			// 
-			this.openFileDialog1.FileName = "openFileDialog1";
-			this.openFileDialog1.InitialDirectory = "E:\\pics\\iphone-4s\\";
 			// 
 			// textBoxFileName
 			// 
@@ -67,19 +61,19 @@
 			this.buttonUpload.UseVisualStyleBackColor = true;
 			this.buttonUpload.Click += new System.EventHandler(this.btnUpload_Click);
 			// 
-			// textBoxHostPort
+			// textBoxUrlWebService
 			// 
-			this.textBoxHostPort.Location = new System.Drawing.Point(12, 41);
-			this.textBoxHostPort.Name = "textBoxHostPort";
-			this.textBoxHostPort.Size = new System.Drawing.Size(327, 20);
-			this.textBoxHostPort.TabIndex = 3;
+			this.textBoxUrlWebService.Location = new System.Drawing.Point(12, 41);
+			this.textBoxUrlWebService.Name = "textBoxUrlWebService";
+			this.textBoxUrlWebService.Size = new System.Drawing.Size(327, 20);
+			this.textBoxUrlWebService.TabIndex = 3;
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(487, 75);
-			this.Controls.Add(this.textBoxHostPort);
+			this.Controls.Add(this.textBoxUrlWebService);
 			this.Controls.Add(this.buttonUpload);
 			this.Controls.Add(this.textBoxFileName);
 			this.Controls.Add(this.buttonBrowse);
@@ -93,10 +87,9 @@
 		#endregion
 
 		private System.Windows.Forms.Button buttonBrowse;
-		private System.Windows.Forms.OpenFileDialog openFileDialog1;
 		private System.Windows.Forms.TextBox textBoxFileName;
 		private System.Windows.Forms.Button buttonUpload;
-		private System.Windows.Forms.TextBox textBoxHostPort;
+		private System.Windows.Forms.TextBox textBoxUrlWebService;
 	}
 }
 

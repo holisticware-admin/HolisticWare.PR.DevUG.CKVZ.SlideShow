@@ -7,7 +7,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
-namespace HolisticWare.SlideShow.EXE_XA
+namespace HolisticWare.SlideShow.EXE
 {
 	[Activity(Label = "HolisticWare.SlideShow.EXE_XA", MainLauncher = true, Icon = "@drawable/icon")]
 	public class Activity1 : Activity
@@ -23,9 +23,11 @@ namespace HolisticWare.SlideShow.EXE_XA
 
 			// Get our button from the layout resource,
 			// and attach an event to it
-			Button button = FindViewById<Button>(Resource.Id.MyButton);
+			Button buttonLoad = FindViewById<Button>(Resource.Id.buttonLoad);
+			Button buttonBrowse = FindViewById<Button>(Resource.Id.buttonBrowse);
+			//button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
 
-			button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+			return;
 		}
 	}
 }

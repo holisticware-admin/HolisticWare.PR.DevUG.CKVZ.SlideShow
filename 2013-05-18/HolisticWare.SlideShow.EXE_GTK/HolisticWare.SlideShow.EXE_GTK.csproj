@@ -47,6 +47,7 @@
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="Mono.Posix" />
+    <Reference Include="System.Web.Services" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="gtk-gui\gui.stetic">
@@ -54,15 +55,20 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\BitmapImageFile.cs" />
-    <Compile Include="Controllers\FileUploaderDownloader.cs" />
-    <Compile Include="Controllers\WebServiceClientProxy.cs" />
+    <Compile Include="Controllers\Send.cs" />
     <Compile Include="MainWindow.Shared.cs" />
     <Compile Include="gtk-gui\generated.cs" />
     <Compile Include="MainWindow.cs" />
     <Compile Include="gtk-gui\MainWindow.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK.csproj">
+      <Project>{9E9BC9C6-106D-4FD2-B35E-B1E32E405391}</Project>
+      <Name>HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

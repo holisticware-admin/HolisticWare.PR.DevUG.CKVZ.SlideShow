@@ -38,7 +38,7 @@ namespace HolisticWare.SlideShow.EXE
 
 			textBoxLoad = new Entry("image file");
 			textBoxLoad.SetSizeRequest(320, 20);
-			textBoxSend = new Entry(HolisticWare.SlideShow.EXE.Controllers.WebServiceClientProxy.Url);
+			textBoxSend = new Entry(HolisticWare.SlideShow.BusinessLogic.WebServiceClientProxy.Url);
 			textBoxSend.SetSizeRequest(320, 20);
 
 			fix = new Fixed();

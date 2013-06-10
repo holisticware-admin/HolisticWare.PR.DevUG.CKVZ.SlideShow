@@ -33,16 +33,30 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\BitmapImageFile.cs">
+      <Link>BitmapImageFile.cs</Link>
+    </Compile>
+    <Compile Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\FileUploaderDownloader.cs">
+      <Link>FileUploaderDownloader.cs</Link>
+    </Compile>
+    <Compile Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\FileUploaderDownloader.non-SL.cs">
+      <Link>FileUploaderDownloader.non-SL.cs</Link>
+    </Compile>
+    <Compile Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\WebServiceClientProxy.cs">
+      <Link>WebServiceClientProxy.cs</Link>
+    </Compile>
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -52,10 +66,39 @@
   <ItemGroup>
     <AndroidResource Include="Resources\Values\Strings.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\Web References\MonoASPnetMVC4AWSHolisticware\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+      <Link>Web References\MonoASPnetMVC4AWSHolisticware\Reference.cs</Link>
+    </Compile>
+    <None Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\Web References\MonoASPnetMVC4AWSHolisticware\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+      <Link>Web References\MonoASPnetMVC4AWSHolisticware\Reference.map</Link>
+    </None>
+    <None Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\Web References\MonoASPnetMVC4AWSHolisticware\WebServiceFileUploader.wsdl">
+      <Link>Web References\MonoASPnetMVC4AWSHolisticware\WebServiceFileUploader.wsdl</Link>
+    </None>
+    <None Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\Web References\MonoASPnetMVC4AWSHolisticware\WebServiceFileUploader.disco">
+      <Link>Web References\MonoASPnetMVC4AWSHolisticware\WebServiceFileUploader.disco</Link>
+    </None>
+    <WebReferences Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\Web References\" />
+    <WebReferenceUrl Include="http://localhost:8404/WebServiceFileUploader.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MonoASPnetMVC4AWSHolisticware\</RelPath>
+      <UpdateFromURL>http://localhost:8404/WebServiceFileUploader.asmx</UpdateFromURL>
+      <ServiceLocationURL />
+      <CachedDynamicPropName />
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>HolisticWare_SlideShow_DLL_BL_WF_MonoASPnetMVC4AWSHolisticware_WebServiceFileUploader</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.MA.cs;\.MT.cs;\.WF.cs;\.WPF.cs;\.ASPNET.cs;\.SLRIA.cs;\.MM.cs;\.Mono.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$;\\?\.WP(\\.*)?$;\\?\.MA(\\.*)?$;\\?\.MT(\\.*)?$;\\?\.WF(\\.*)?$;\\?\.WPF(\\.*)?$;\\?\.ASPNET(\\.*)?$;\\?\.SLRIA(\\.*)?$;\\?\.MM(\\.*)?$;\\?\.Mono(\\.*)?$" ProjectLinkReference="ba8dce1b-d9b7-4f13-b08f-a4170ba5bb6b" />
+      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.MA.cs;\.MT.cs;\.WF.cs;\.WPF.cs;\.ASPNET.cs;\.SLRIA.cs;\.MM.cs;\.Mono.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$;\\?\.WP(\\.*)?$;\\?\.MA(\\.*)?$;\\?\.MT(\\.*)?$;\\?\.WF(\\.*)?$;\\?\.WPF(\\.*)?$;\\?\.ASPNET(\\.*)?$;\\?\.SLRIA(\\.*)?$;\\?\.MM(\\.*)?$;\\?\.Mono(\\.*)?$" ProjectLinkReference="9e9bc9c6-106d-4fd2-b35e-b1e32e405391" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
