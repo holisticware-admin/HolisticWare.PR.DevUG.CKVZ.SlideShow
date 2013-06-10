@@ -8,6 +8,7 @@ using Android.OS;
 using Xamarin.Media;
 using System.Threading.Tasks;
 using Android.Graphics;
+using System.IO;
 
 namespace HolisticWare.SlideShow.EXE
 {
@@ -16,6 +17,9 @@ namespace HolisticWare.SlideShow.EXE
 	{
 
 		ImageView imageView;
+		Bitmap b;
+		MemoryStream stream;
+
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
@@ -63,11 +67,16 @@ namespace HolisticWare.SlideShow.EXE
 											}
 
 											Console.WriteLine (t.Result.Path);
-											Bitmap b = BitmapFactory.DecodeFile(t.Result.Path);
+											b = BitmapFactory.DecodeFile(t.Result.Path);
 											imageView.SetImageBitmap(b);
 
 											}, TaskScheduler.FromCurrentSynchronizationContext());
 										}
+										
+										//MOKEEEEEE Bitmap TO Array
+										stream = new MemoryStream();
+										b.Compress(Bitmap.CompressFormat.Png, 0, stream);
+										byte[] bitmapData = stream.ToArray();
 
 										}
 			);
@@ -87,10 +96,16 @@ namespace HolisticWare.SlideShow.EXE
 										}
 
 										Console.WriteLine (t.Result.Path);
-										Bitmap b = BitmapFactory.DecodeFile(t.Result.Path);
+										b = BitmapFactory.DecodeFile(t.Result.Path);
 										imageView.SetImageBitmap(b);
 
 									}, TaskScheduler.FromCurrentSynchronizationContext());
+
+									//MOKEEEEEE Bitmap TO Array
+									stream = new MemoryStream();
+									b.Compress(Bitmap.CompressFormat.Png, 0, stream);
+									byte[] bitmapData = stream.ToArray();
+
 							}
 		
 			);

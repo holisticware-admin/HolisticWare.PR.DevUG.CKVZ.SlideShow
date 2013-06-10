@@ -9,6 +9,8 @@ namespace HolisticWare.SlideShow.EXE
 {
 	public partial class HolisticWare_SlideShow_EXE_XIViewController : UIViewController
 	{
+		UIImage image;
+
 		public HolisticWare_SlideShow_EXE_XIViewController (IntPtr handle) : base (handle)
 		{
 		}
@@ -64,9 +66,22 @@ namespace HolisticWare.SlideShow.EXE
 					}, TaskScheduler.FromCurrentSynchronizationContext());
 				}
 
+				//MOKEEEEEEEEE UIImage To ByteArray
+				image = imageView.Image;
 
+				using (NSData imageData = image.AsJPEG()) 
+				{
+					Byte[] myByteArray = new byte[imageData.Length];
+					System.Runtime.InteropServices.Marshal.Copy
+						(imageData.Bytes, myByteArray, 0, Convert.ToInt32 (imageData.Length));
 
-			} else if (e.ButtonIndex == 2) {
+					//Mokeee
+				}
+
+				image.Dispose ();
+
+			} 
+			else if (e.ButtonIndex == 2) {
 			
 				System.Console.WriteLine ("Library");
 
@@ -84,6 +99,19 @@ namespace HolisticWare.SlideShow.EXE
 					}, TaskScheduler.FromCurrentSynchronizationContext());
 				}
 
+			//MOKEEEEEEEEE UIImage To ByteArray
+			image = imageView.Image;
+
+			using (NSData imageData = image.AsJPEG()) 
+			{
+				Byte[] myByteArray = new byte[imageData.Length];
+				System.Runtime.InteropServices.Marshal.Copy
+					(imageData.Bytes, myByteArray, 0, Convert.ToInt32 (imageData.Length));
+
+				//Mokeee
+			}
+
+			image.Dispose ();
 		}
 
 		public override void ViewWillAppear (bool animated)
