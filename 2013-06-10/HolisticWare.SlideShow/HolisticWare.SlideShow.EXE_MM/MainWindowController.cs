@@ -36,6 +36,14 @@ namespace HolisticWare.SlideShow.EXE_MM
 				return (MainWindow)base.Window;
 			}
 		}
+
+		public override void WindowDidLoad ()
+		{
+			base.WindowDidLoad ();
+
+			//MOKI TU;
+
+		}
 	}
 }
 

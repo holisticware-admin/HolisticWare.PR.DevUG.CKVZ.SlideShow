@@ -6,12 +6,12 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
-namespace HolisticWare.SlideShow.EXE_XA
+namespace HolisticWare.SlideShow.EXE
 {
 	[Activity (Label = "HolisticWare.SlideShow.EXE_XA", MainLauncher = true)]
 	public class MainActivity : Activity
 	{
-		int count = 1;
+
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -22,11 +22,41 @@ namespace HolisticWare.SlideShow.EXE_XA
 
 			// Get our button from the layout resource,
 			// and attach an event to it
-			Button button = FindViewById<Button> (Resource.Id.myButton);
-			
-			button.Click += delegate {
-				button.Text = string.Format ("{0} clicks!", count++);
-			};
+			//Button button = FindViewById<Button> (Resource.Id.myButton);
+
+			Button buttonBoxBrowsePickTake = FindViewById<Button> (Resource.Id.buttonBoxBrowsePickTake);
+			Button buttonSendUploadToUrlWebService = FindViewById<Button> (Resource.Id.buttonSendUploadToUrlWebService);
+
+			ImageView imageView = FindViewById<ImageView> (Resource.Id.imageView);
+			buttonBoxBrowsePickTake.Click += ChooseOrTakePicture;
+
+		
+		}
+
+		void ChooseOrTakePicture (object sender, EventArgs e)
+		{
+			var builder = new AlertDialog.Builder(this);
+			builder.SetTitle("Media Chooser");
+			builder.SetMessage("Camera Or Library");
+			builder.SetCancelable(false);
+
+			builder.SetPositiveButton("Camera"
+			                          , 
+			                          delegate 
+			                          { 
+				//StartActivity(typeof(pnl5000LocationDetail));	
+			}
+			);
+
+			builder.SetNeutralButton("Library"
+			                         ,
+			                         delegate 
+			                         {
+
+			});
+			builder.SetNegativeButton("Cancel",delegate {});
+
+			builder.Show();
 		}
 	}
 }
