@@ -336,6 +336,6 @@ Global
 		{E598EA3C-1C0A-42DD-993A-D151535DAC38} = {1DDAAFAF-FEE6-4512-B52F-D33C74E66CBB}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = MVC2\MVC2.csproj
+		StartupItem = HolisticWare.SlideShow.EXE_XI\HolisticWare.SlideShow.EXE_XI.csproj
 	EndGlobalSection
 EndGlobal
