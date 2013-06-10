@@ -1,0 +1,59 @@
+<ItemGroup>
+  <Compile Include="BitmapImageFile.cs">
+	<SubType>Code</SubType>
+  </Compile>
+  <Compile Include="FileUploaderDownloader.cs">
+	<SubType>Code</SubType>
+  </Compile>
+  <Compile Include="FileUploaderDownloader.non-SL.cs">
+	<SubType>Code</SubType>
+  </Compile>
+  <Compile Include="Properties\AssemblyInfo.cs" />
+  <Compile Include="Web References\MonoASPnetMVC4AWSHolisticware\Reference.cs">
+	<AutoGen>True</AutoGen>
+	<DesignTime>True</DesignTime>
+	<DependentUpon>Reference.map</DependentUpon>
+  </Compile>
+  <Compile Include="WebServiceClientProxy.cs">
+	<SubType>Code</SubType>
+  </Compile>
+</ItemGroup>
+<ItemGroup>
+  <Compile Include="Properties\Settings.Designer.cs">
+	<AutoGen>True</AutoGen>
+	<DesignTimeSharedInput>True</DesignTimeSharedInput>
+	<DependentUpon>Settings.settings</DependentUpon>
+  </Compile>
+  <None Include="app.config" />
+  <None Include="Properties\Settings.settings">
+	<Generator>SettingsSingleFileGenerator</Generator>
+	<LastGenOutput>Settings.Designer.cs</LastGenOutput>
+  </None>
+  <None Include="Web References\MonoASPnetMVC4AWSHolisticware\Reference.map">
+	<Generator>MSDiscoCodeGenerator</Generator>
+	<LastGenOutput>Reference.cs</LastGenOutput>
+  </None>
+  <None Include="Web References\MonoASPnetMVC4AWSHolisticware\WebServiceFileUploader.wsdl" />
+</ItemGroup>
+<ItemGroup>
+  <WebReferences Include="Web References\" />
+</ItemGroup>
+<ItemGroup>
+  <WCFMetadata Include="Service References\" />
+</ItemGroup>
+<ItemGroup>
+  <WebReferenceUrl Include="http://localhost:8404/WebServiceFileUploader.asmx">
+	<UrlBehavior>Dynamic</UrlBehavior>
+	<RelPath>Web References\MonoASPnetMVC4AWSHolisticware\</RelPath>
+	<UpdateFromURL>http://localhost:8404/WebServiceFileUploader.asmx</UpdateFromURL>
+	<ServiceLocationURL>
+	</ServiceLocationURL>
+	<CachedDynamicPropName>
+	</CachedDynamicPropName>
+	<CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+	<CachedSettingsPropName>HolisticWare_SlideShow_DLL_BL_WF_MonoASPnetMVC4AWSHolisticware_WebServiceFileUploader</CachedSettingsPropName>
+  </WebReferenceUrl>
+</ItemGroup>
+<ItemGroup>
+  <None Include="Web References\MonoASPnetMVC4AWSHolisticware\WebServiceFileUploader.disco" />
+</ItemGroup>

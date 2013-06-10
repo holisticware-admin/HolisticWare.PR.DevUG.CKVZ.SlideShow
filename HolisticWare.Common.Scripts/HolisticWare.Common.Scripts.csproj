@@ -52,7 +52,7 @@
     <Content Include="Docs\Home Page - My ASP.NET MVC Application_files\modernizr-2.5.3.js" />
     <None Include="MonoAWS.ppk" />
     <None Include="pscp-to-server.aws-mono.secure.bat" />
-    <None Include="putty-holisticware-aws-mono.bat" />
+    <None Include="putty-holisticware-aws-mono.secure.bat" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

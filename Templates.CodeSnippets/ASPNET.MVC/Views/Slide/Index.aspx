@@ -8,6 +8,16 @@
 
 <h2>Index</h2>
 
+	<nav>
+		<ul id="menu">
+			<!-- 
+				Action Link:
+					Link text, Action, Controller name
+			-->
+			<li><%: Html.ActionLink("Silverlight Client", "SilverlightClient", "Slide") %></li>
+		</ul>
+	</nav>
+
    <% foreach (var image in ViewData.Model) 
 	  { %>
 		<span class="image">
