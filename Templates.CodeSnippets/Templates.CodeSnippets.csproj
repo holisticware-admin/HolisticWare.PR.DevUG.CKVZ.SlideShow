@@ -61,6 +61,7 @@
     </Content>
     <Content Include="ASPNET.MVC\Views\Slide\SilverlightClient.aspx" />
     <Content Include="ASPNET.MVC\WebServiceFileUploader.asmx" />
+    <Content Include="DLL_Common\web reference cleaned.csproj.txt" />
     <Content Include="EXE_SL\Screen.xaml.txt">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -86,6 +87,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DLL_Common\web reference original.csproj.txt" />
+    <Content Include="ASPNET.MVC\references copy local.txt" />
     <None Include="EXE.GTK\buttonBrowsePickTake_Clicked" />
     <None Include="EXE.GTK\buttonSendUploadToUrlWebService_Clicked" />
     <None Include="EXE_SL\buttonBrowsePickTake_Click" />

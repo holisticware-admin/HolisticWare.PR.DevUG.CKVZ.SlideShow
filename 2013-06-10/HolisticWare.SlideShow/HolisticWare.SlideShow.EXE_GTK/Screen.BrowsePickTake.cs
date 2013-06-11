@@ -22,7 +22,9 @@ namespace HolisticWare.SlideShow.EXE
 			{
 				int l = fc.Filename.LastIndexOf('\\') + 1;
 				textBoxImageNamePickedTaken.Text = fc.Filename.Substring(l);
-				
+
+				filename_absolute = fc.Filename;
+
 				System.IO.FileStream file = System.IO.File.OpenRead(fc.Filename);
 				file.Close();
 			}

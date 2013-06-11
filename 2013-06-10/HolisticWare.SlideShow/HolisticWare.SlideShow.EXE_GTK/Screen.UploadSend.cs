@@ -7,6 +7,7 @@ namespace HolisticWare.SlideShow.EXE
 	public partial class Screen 
 	{
 		HolisticWare.SlideShow.BusinessLogic.FileUploaderDownloader fud = null;
+		string filename_absolute = null;
 
 		// The class wraps up with the button click event handler for the Upload 
 		// button. This handler merely checks for text in the file name text box and, 
@@ -27,12 +28,13 @@ namespace HolisticWare.SlideShow.EXE
 				string filename = textBoxImageNamePickedTaken.Text;
 
 				fud = new HolisticWare.SlideShow.BusinessLogic.FileUploaderDownloader();
-				fud.UploadFile(webserivce, filename);
+				fud.UploadFile(webserivce, filename_absolute);
 				fud.MessagesChanged += new EventHandler(fud_MessagesChanged);
 			}
 			else
 			{
 				// Gtk.MessageDialog.Show("You must select a file first.", "No File Selected");
+				Console.WriteLine("You must select a file first." + "No File Selected");
 			}
 
 			return;
@@ -41,7 +43,7 @@ namespace HolisticWare.SlideShow.EXE
 		void fud_MessagesChanged(object sender, EventArgs e)
 		{
 			//MessageBox.Show(fud.Messages[0], fud.Messages[1]);
-            Console.WriteLine("Message = " + fud.Messages[0] + " " + fud.Messages[1]);
+			Console.WriteLine("Message = " + fud.Messages[0] + " " + fud.Messages[1]);
 
 			return;
 		}
