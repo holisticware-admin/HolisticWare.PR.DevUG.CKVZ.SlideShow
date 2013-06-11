@@ -85,7 +85,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Screen.Shared.cs">
+    <Compile Include="Screen.WF.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Screen.cs">

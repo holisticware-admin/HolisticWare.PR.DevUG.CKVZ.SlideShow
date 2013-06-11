@@ -55,7 +55,29 @@
     <Reference Include="System.Windows.Browser" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPG_GTK_MM\BitmapImageFile.cs">
+      <Link>BitmapImageFile.cs</Link>
+    </Compile>
+    <Compile Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPG_GTK_MM\FileUploaderDownloader.cs">
+      <Link>FileUploaderDownloader.cs</Link>
+    </Compile>
+    <Compile Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPG_GTK_MM\Properties\Settings.Designer.cs">
+      <Link>Properties\Settings.Designer.cs</Link>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPG_GTK_MM\WebServiceClientProxy.cs">
+      <Link>WebServiceClientProxy.cs</Link>
+    </Compile>
+    <Compile Include="FileUploaderDownloader.SL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPG_GTK_MM\app.config">
+      <Link>app.config</Link>
+    </None>
+    <None Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPG_GTK_MM\Properties\Settings.settings">
+      <Link>Properties\Settings.settings</Link>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <ProjectExtensions>
@@ -63,6 +85,7 @@
       <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
         <SilverlightProjectProperties />
       </FlavorProperties>
+      <UserProperties ProjectLinkReference="8fc93884-2990-43ee-883f-1b2f5d39d510" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.MA.cs;\.MT.cs;\.WF.cs;\.WPF.cs;\.ASPNET.cs;\.SLRIA.cs;\.MM.cs;\.Mono.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$;\\?\.WP(\\.*)?$;\\?\.MA(\\.*)?$;\\?\.MT(\\.*)?$;\\?\.WF(\\.*)?$;\\?\.WPF(\\.*)?$;\\?\.ASPNET(\\.*)?$;\\?\.SLRIA(\\.*)?$;\\?\.MM(\\.*)?$;\\?\.Mono(\\.*)?$" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -47,7 +47,8 @@
     <Compile Include="DLL_SL\FileUploaderDownloader.SL.cs" />
     <Compile Include="EXE.GTK\Screen.cs" />
     <Compile Include="EXE.GTK\Screen.Shared.cs" />
-    <Compile Include="EXE_Common\Controllers\WebServiceClientProxy.cs" />
+    <Compile Include="EXE_Common_Controllers\Controllers\WebServiceClientProxy.cs" />
+    <Compile Include="EXE_WF\Screen.WF.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ASPNET.MVC\Site.Master.txt" />
@@ -84,6 +85,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EXE_WF\Screen.cs" />
+    <Compile Include="EXE_WF\Screen.Shared.cs" />
     <None Include="readme.md" />
     <Content Include="WebServicesSOAPClientProxy\02-grouped.csproj.xml">
       <SubType>Designer</SubType>

@@ -7,10 +7,10 @@ namespace HolisticWare.SlideShow.EXE
 	public partial class Screen : Gtk.Window
 	{
 		private Fixed fix = null;
-		private Entry textBoxLoad = null;
-		private Button buttonLoad = null;
-		private Entry textBoxSend = null;
-		private Button buttonSend = null;
+		private Entry textImageNamePickedTaken = null;
+		private Button buttonBrowsePickTake = null;
+		private Entry textBoxUrlWebService = null;
+		private Button buttonSendUploadToUrlWebService = null;
 
 		public Screen()
 			: base(Gtk.WindowType.Toplevel)

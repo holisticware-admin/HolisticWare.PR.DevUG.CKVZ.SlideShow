@@ -42,7 +42,7 @@
 			this.buttonBoxBrowsePickTake.TabIndex = 0;
 			this.buttonBoxBrowsePickTake.Text = "Browse?Pick [Take]";
 			this.buttonBoxBrowsePickTake.UseVisualStyleBackColor = true;
-			this.buttonBoxBrowsePickTake.Click += new System.EventHandler(this.btnBrowse_Click);
+			this.buttonBoxBrowsePickTake.Click += new System.EventHandler(this.buttonBrowsePickTake_Click);
 			// 
 			// textImageNamePickedTaken
 			// 
@@ -59,7 +59,7 @@
 			this.buttonSendUploadToUrlWebService.TabIndex = 2;
 			this.buttonSendUploadToUrlWebService.Text = "Upload";
 			this.buttonSendUploadToUrlWebService.UseVisualStyleBackColor = true;
-			this.buttonSendUploadToUrlWebService.Click += new System.EventHandler(this.btnUpload_Click);
+			this.buttonSendUploadToUrlWebService.Click += new System.EventHandler(this.buttonSendUploadToUrlWebService_Click);
 			// 
 			// textBoxUrlWebService
 			// 

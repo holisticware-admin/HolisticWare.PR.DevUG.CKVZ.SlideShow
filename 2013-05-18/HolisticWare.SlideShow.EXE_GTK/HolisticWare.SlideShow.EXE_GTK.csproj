@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\Send.cs" />
+    <Compile Include="Controllers\WebServiceClientProxy.cs" />
     <Compile Include="Screen.Shared.cs" />
     <Compile Include="gtk-gui\generated.cs" />
     <Compile Include="Screen.cs" />
