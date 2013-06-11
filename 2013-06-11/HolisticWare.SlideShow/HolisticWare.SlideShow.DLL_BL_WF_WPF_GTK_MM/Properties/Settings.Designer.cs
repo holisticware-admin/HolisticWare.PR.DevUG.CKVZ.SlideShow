@@ -23,10 +23,10 @@ namespace HolisticWare.SlideShow.BusinessLogic.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        //[global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:24179/WebServiceFileUploader.asmx")]
+        //[global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        //[global::System.Configuration.DefaultSettingValueAttribute("http://localhost:24179/WebServiceFileUploader.asmx")]
         public string HolisticWare_SlideShow_DLL_BL_WF_WPF_GTK_MM_MonoASPnetMVC4AWSHolisticware_WebServiceFileUploader {
             get {
                 return ((string)(this["HolisticWare_SlideShow_DLL_BL_WF_WPF_GTK_MM_MonoASPnetMVC4AWSHolisticware_WebServ" +

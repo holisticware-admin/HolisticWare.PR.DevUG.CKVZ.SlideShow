@@ -54,6 +54,9 @@
       <Link>Properties\Settings.Designer.cs</Link>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="..\HolisticWare.SlideShow.DLL_BL_WF_WPF_GTK_MM\Web References\MonoASPnetMVC4AWSHolisticware\Reference.cs">
+      <Link>Reference.cs</Link>
+    </Compile>
     <Compile Include="..\HolisticWare.SlideShow.DLL_BL_WF_WPF_GTK_MM\WebServiceClientProxy.cs">
       <Link>WebServiceClientProxy.cs</Link>
     </Compile>
@@ -74,7 +77,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties ProjectLinkReference="9209af87-af80-4f10-bf4c-1d6d3ae30f34" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.MA.cs;\.MT.cs;\.WF.cs;\.WPF.cs;\.ASPNET.cs;\.SLRIA.cs;\.MM.cs;\.Mono.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$;\\?\.WP(\\.*)?$;\\?\.MA(\\.*)?$;\\?\.MT(\\.*)?$;\\?\.WF(\\.*)?$;\\?\.WPF(\\.*)?$;\\?\.ASPNET(\\.*)?$;\\?\.SLRIA(\\.*)?$;\\?\.MM(\\.*)?$;\\?\.Mono(\\.*)?$" />
+      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.MA.cs;\.MT.cs;\.WF.cs;\.WPF.cs;\.ASPNET.cs;\.SLRIA.cs;\.MM.cs;\.Mono.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$;\\?\.WP(\\.*)?$;\\?\.MA(\\.*)?$;\\?\.MT(\\.*)?$;\\?\.WF(\\.*)?$;\\?\.WPF(\\.*)?$;\\?\.ASPNET(\\.*)?$;\\?\.SLRIA(\\.*)?$;\\?\.MM(\\.*)?$;\\?\.Mono(\\.*)?$" ProjectLinkReference="9209af87-af80-4f10-bf4c-1d6d3ae30f34" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
