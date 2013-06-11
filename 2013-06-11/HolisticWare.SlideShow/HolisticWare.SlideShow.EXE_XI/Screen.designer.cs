@@ -11,9 +11,39 @@ namespace HolisticWare.SlideShow.EXE
 	[Register ("Screen")]
 	partial class Screen
 	{
+		[Outlet]
+		MonoTouch.UIKit.UIBarButtonItem buttonBoxBrowsePickTake { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UIBarButtonItem buttonSendUploadToUrlWebService { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UIBarButtonItem buttonClearImage { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UIImageView imageView { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (buttonBoxBrowsePickTake != null) {
+				buttonBoxBrowsePickTake.Dispose ();
+				buttonBoxBrowsePickTake = null;
+			}
+
+			if (buttonSendUploadToUrlWebService != null) {
+				buttonSendUploadToUrlWebService.Dispose ();
+				buttonSendUploadToUrlWebService = null;
+			}
+
+			if (buttonClearImage != null) {
+				buttonClearImage.Dispose ();
+				buttonClearImage = null;
+			}
+
+			if (imageView != null) {
+				imageView.Dispose ();
+				imageView = null;
+			}
 		}
 	}
 }

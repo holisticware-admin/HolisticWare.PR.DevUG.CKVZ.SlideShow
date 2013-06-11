@@ -141,6 +141,6 @@ Global
 		{F199FEF2-288E-4F1D-8666-5341B25E9DFE}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = MVC2\MVC2.csproj
+		StartupItem = HolisticWare.SlideShow.EXE_MM\HolisticWare.SlideShow.EXE_MM.csproj
 	EndGlobalSection
 EndGlobal

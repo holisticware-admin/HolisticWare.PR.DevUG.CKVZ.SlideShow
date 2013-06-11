@@ -74,6 +74,9 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
+    <Reference Include="Xamarin.Mobile">
+      <HintPath>..\xamarin.mobile-0.6.3\lib\ios\Xamarin.Mobile.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -84,9 +87,9 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="HolisticWare.SlideShow.EXE_XIViewController.cs" />
-    <Compile Include="HolisticWare.SlideShow.EXE_XIViewController.designer.cs">
-      <DependentUpon>HolisticWare.SlideShow.EXE_XIViewController.cs</DependentUpon>
+    <Compile Include="Screen.cs" />
+    <Compile Include="Screen.designer.cs">
+      <DependentUpon>Screen.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
