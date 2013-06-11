@@ -554,6 +554,6 @@ Global
 		{AF6251A7-27BA-4217-B15F-D6BD9C96013E} = {AFBCD715-8DCC-434B-8255-DE427CB8C81B}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = MVC2\MVC2.csproj
+		StartupItem = HolisticWare.SlideShow.EXE_MM\HolisticWare.SlideShow.EXE_MM.csproj
 	EndGlobalSection
 EndGlobal

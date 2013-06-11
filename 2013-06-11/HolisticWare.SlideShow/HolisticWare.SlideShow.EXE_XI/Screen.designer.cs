@@ -4,21 +4,24 @@
 // actions made in the Xcode designer. If it is removed, they will be lost.
 // Manual changes to this file may not be handled correctly.
 //
-using MonoMac.Foundation;
+using MonoTouch.Foundation;
 
-namespace HolisticWare.SlideShow.EXE_MM
+namespace HolisticWare.SlideShow.EXE
 {
-	[Register ("MainWindowController")]
-	partial class MainWindowController
+	[Register ("Screen")]
+	partial class Screen
 	{
 		[Outlet]
-		MonoMac.AppKit.NSButton buttonBoxBrowsePickTake { get; set; }
+		MonoTouch.UIKit.UIBarButtonItem buttonBoxBrowsePickTake { get; set; }
 
 		[Outlet]
-		MonoMac.AppKit.NSButton buttonSendUploadToUrlWebService { get; set; }
+		MonoTouch.UIKit.UIBarButtonItem buttonSendUploadToUrlWebService { get; set; }
 
 		[Outlet]
-		MonoMac.AppKit.NSImageView imageView { get; set; }
+		MonoTouch.UIKit.UIBarButtonItem buttonClearImage { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UIImageView imageView { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
@@ -32,19 +35,15 @@ namespace HolisticWare.SlideShow.EXE_MM
 				buttonSendUploadToUrlWebService = null;
 			}
 
+			if (buttonClearImage != null) {
+				buttonClearImage.Dispose ();
+				buttonClearImage = null;
+			}
+
 			if (imageView != null) {
 				imageView.Dispose ();
 				imageView = null;
 			}
-		}
-	}
-
-	[Register ("MainWindow")]
-	partial class MainWindow
-	{
-		
-		void ReleaseDesignerOutlets ()
-		{
 		}
 	}
 }

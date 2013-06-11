@@ -38,6 +38,33 @@ namespace HolisticWare.SlideShow.EXE_MM
 				return (MainWindow)base.Window;
 			}
 		}
+
+		public override void WindowDidLoad ()
+		{
+			base.WindowDidLoad ();
+
+			buttonBoxBrowsePickTake.Activated += MediaChooser;
+
+
+
+		}
+
+		void MediaChooser (object sender, EventArgs e)
+		{
+			var openPanel = new NSOpenPanel();
+			openPanel.ReleasedWhenClosed = true;
+			openPanel.Prompt = "Select file";
+
+			var result = openPanel.RunModal();
+
+			if (result == 1)
+			{
+
+				NSImage image = new NSImage (openPanel.Url);
+				imageView.Image = image;
+
+			}
+		}
 	}
 }
 
