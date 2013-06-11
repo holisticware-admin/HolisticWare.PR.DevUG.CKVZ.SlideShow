@@ -54,12 +54,16 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\HolisticWare.SlideShow.EXE_WF\Controllers\WebServiceClientProxy.cs">
+      <Link>Controllers\WebServiceClientProxy.cs</Link>
+    </Compile>
     <Compile Include="gtk-gui\generated.cs" />
-    <Compile Include="Screen.cs" />
     <Compile Include="gtk-gui\Screen.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Screen.Shared.cs" />
+    <Compile Include="Screen.BrowsePickTake.cs" />
+    <Compile Include="Screen.cs" />
+    <Compile Include="Screen.UploadSend.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

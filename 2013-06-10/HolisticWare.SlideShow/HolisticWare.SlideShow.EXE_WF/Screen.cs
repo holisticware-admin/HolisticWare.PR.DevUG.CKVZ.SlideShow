@@ -7,13 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace HolisticWare.SlideShow.EXE_WF
+
+using HolisticWare.SlideShow.EXE.Controllers;
+
+namespace HolisticWare.SlideShow.EXE
 {
 	public partial class Screen : Form
 	{
 		public Screen()
 		{
 			InitializeComponent();
+
+			// Controller
+			textBoxUrlWebService.Text = WebServiceClientProxy.Url;
 		}
+
 	}
 }

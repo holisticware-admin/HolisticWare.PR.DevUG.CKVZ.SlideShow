@@ -1,20 +1,12 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Gtk;
 
 namespace HolisticWare.SlideShow.EXE
 {
-	public partial class Screen
-	{
-		void buttonSend_Clicked(object sender, EventArgs e)
-		{
-			return;
-		}
 
-		void buttonLoad_Clicked(object sender, EventArgs e)
+	public partial class Screen 
+	{
+		void buttonBrowsePickTake_Clicked(object sender, EventArgs e)
 		{
 			FileChooserDialog fc =
 			new FileChooserDialog
@@ -28,6 +20,9 @@ namespace HolisticWare.SlideShow.EXE
 
 			if (fc.Run() == (int)ResponseType.Accept)
 			{
+				int l = fc.Filename.LastIndexOf('\\') + 1;
+				textBoxImageNamePickedTaken.Text = fc.Filename.Substring(l);
+				
 				System.IO.FileStream file = System.IO.File.OpenRead(fc.Filename);
 				file.Close();
 			}
@@ -36,5 +31,6 @@ namespace HolisticWare.SlideShow.EXE
 
 			return;
 		}
+
 	}
 }

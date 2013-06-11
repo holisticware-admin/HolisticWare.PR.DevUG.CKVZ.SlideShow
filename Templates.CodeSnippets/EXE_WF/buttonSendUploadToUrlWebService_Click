@@ -1,0 +1,38 @@
+		FileUploaderDownloader fud = new FileUploaderDownloader();
+
+		// The class wraps up with the button click event handler for the Upload 
+		// button. This handler merely checks for text in the file name text box and, 
+		// if something is there, it sends the value to the Upload method.
+
+		/// <summary>
+		/// If the user has selected a file, send it to the upload method,
+		/// the upload method will convert the file to a byte array and
+		/// send it through the web service
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private void buttonSendUploadToUrlWebService_Click(object sender, EventArgs e)
+		{
+			if (textImageNamePickedTaken.Text != string.Empty)
+			{
+				string webserivce = textBoxUrlWebService.Text;
+				string filename = textImageNamePickedTaken.Text;
+
+				fud = new FileUploaderDownloader();
+				fud.UploadFile(webserivce, filename);
+				fud.MessagesChanged += new EventHandler(fud_MessagesChanged);
+			}
+			else
+			{
+				MessageBox.Show("You must select a file first.", "No File Selected");
+			}
+
+			return;
+		}
+		
+		void fud_MessagesChanged(object sender, EventArgs e)
+		{
+			MessageBox.Show(fud.Messages[0], fud.Messages[1]);
+
+			return;
+		}

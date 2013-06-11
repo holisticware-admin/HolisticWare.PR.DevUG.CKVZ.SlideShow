@@ -1,4 +1,4 @@
-﻿namespace HolisticWare.SlideShow.EXE_WF
+﻿namespace HolisticWare.SlideShow.EXE
 {
 	partial class Screen
 	{
@@ -42,6 +42,7 @@
             this.buttonSendUploadToUrlWebService.TabIndex = 0;
             this.buttonSendUploadToUrlWebService.Text = "Send / Upload";
             this.buttonSendUploadToUrlWebService.UseVisualStyleBackColor = true;
+            this.buttonSendUploadToUrlWebService.Click += new System.EventHandler(this.buttonSendUploadToUrlWebService_Click);
             // 
             // textBoxUrlWebService
             // 

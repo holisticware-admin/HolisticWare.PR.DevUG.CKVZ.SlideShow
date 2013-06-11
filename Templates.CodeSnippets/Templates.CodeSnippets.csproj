@@ -45,8 +45,9 @@
     <Compile Include="DLL_Common\FileUploaderDownloader.non-SL.cs" />
     <Compile Include="DLL_Common\WebServiceClientProxy.cs" />
     <Compile Include="DLL_SL\FileUploaderDownloader.SL.cs" />
+    <Compile Include="EXE.GTK\Screen.UploadSend.cs" />
+    <Compile Include="EXE.GTK\Screen.BrowsePickTake.cs" />
     <Compile Include="EXE.GTK\Screen.cs" />
-    <Compile Include="EXE.GTK\Screen.Shared.cs" />
     <Compile Include="EXE_Common_Controllers\Controllers\WebServiceClientProxy.cs" />
     <Compile Include="EXE_WF\Screen.WF.cs" />
   </ItemGroup>
@@ -85,8 +86,15 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EXE_WF\Screen.cs" />
-    <Compile Include="EXE_WF\Screen.Shared.cs" />
+    <None Include="EXE.GTK\buttonBrowsePickTake_Clicked" />
+    <None Include="EXE.GTK\buttonSendUploadToUrlWebService_Clicked" />
+    <None Include="EXE_SL\buttonBrowsePickTake_Click" />
+    <None Include="EXE_SL\buttonSendUploadToUrlWebService_Click" />
+    <None Include="EXE_WF\ctor" />
+    <None Include="EXE_WF\buttonBrowsePickTake_Click" />
+    <None Include="EXE_WF\buttonSendUploadToUrlWebService_Click" />
+    <None Include="EXE_WP\buttonBrowsePickTake_Click" />
+    <None Include="EXE_WP\buttonSendUploadToUrlWebService_Click" />
     <None Include="readme.md" />
     <Content Include="WebServicesSOAPClientProxy\02-grouped.csproj.xml">
       <SubType>Designer</SubType>

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace HolisticWare.SlideShow.EXE_WF
+namespace HolisticWare.SlideShow.EXE
 {
 	static class Program
 	{
