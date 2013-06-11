@@ -67,6 +67,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="EXE_WP\Screen.xaml.txt">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Project.Snippets\WebServicesSOAPClientProxy\csproj.original.xml" />
     <Content Include="Project.Snippets\WebServicesSOAPClientProxy\csproj.reordered.xml" />
     <Content Include="Project.Snippets\WebServicesSOAPClientProxy\csproj.source-linked.xml">
@@ -90,7 +94,6 @@
     <Reference Include="System.Web.Services" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="EXE_WP\" />
     <Folder Include="Project.Templates\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -4,9 +4,21 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    d:DesignHeight="300" d:DesignWidth="400">
+    d:DesignHeight="295" d:DesignWidth="585">
 
-    <Grid x:Name="LayoutRoot" Background="White">
+    <Grid x:Name="LayoutRoot" Background="White" Height="295" Width="585">
+		<TextBox
+		Name="textBoxUrlWebService" Text="http://mono-aspnet-mvc4-aws.holisticware.org/WebServiceFileUploader.asmx"
+		Height="23" HorizontalAlignment="Right" Margin="0,12,121,0" VerticalAlignment="Top" Width="452" />
+		<Button
+		Name="buttonSendUploadToUrlWebService"  Content="Send / Upload"
+		Height="23" Margin="312,42,121,0" VerticalAlignment="Top" />
+		<TextBox
+		Name="textImageNamePickedTaken" Text="*.jpeg, *.jpg, *.png"
+		Height="23" HorizontalAlignment="Right" Margin="0,70,121,0" VerticalAlignment="Top" Width="452" />
+		<Button
+		Name="buttonBrowsePickTake" Content="Browse / Pick [Take]"
+		Height="23" Margin="312,99,121,0" VerticalAlignment="Top" />
 
-    </Grid>
+	</Grid>
 </UserControl>
