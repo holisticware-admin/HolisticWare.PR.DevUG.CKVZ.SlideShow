@@ -38,6 +38,7 @@
     <Reference Include="monotouch" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Properties\" />
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
@@ -50,13 +51,6 @@
     <Compile Include="..\HolisticWare.SlideShow.DLL_BL_WF_WPF_GTK_MM\FileUploaderDownloader.non-SL.cs">
       <Link>FileUploaderDownloader.non-SL.cs</Link>
     </Compile>
-    <Compile Include="..\HolisticWare.SlideShow.DLL_BL_WF_WPF_GTK_MM\Properties\Settings.Designer.cs">
-      <Link>Properties\Settings.Designer.cs</Link>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
-    <Compile Include="..\HolisticWare.SlideShow.DLL_BL_WF_WPF_GTK_MM\Web References\MonoASPnetMVC4AWSHolisticware\Reference.cs">
-      <Link>Reference.cs</Link>
-    </Compile>
     <Compile Include="..\HolisticWare.SlideShow.DLL_BL_WF_WPF_GTK_MM\WebServiceClientProxy.cs">
       <Link>WebServiceClientProxy.cs</Link>
     </Compile>
@@ -64,9 +58,6 @@
   <ItemGroup>
     <None Include="..\HolisticWare.SlideShow.DLL_BL_WF_WPF_GTK_MM\app.config">
       <Link>app.config</Link>
-    </None>
-    <None Include="..\HolisticWare.SlideShow.DLL_BL_WF_WPF_GTK_MM\Properties\Settings.settings">
-      <Link>Properties\Settings.settings</Link>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -7,6 +7,7 @@ using System.Text;
 using System.IO;
 
 using HolisticWare.SlideShow.BusinessLogic.MonoASPnetMVC4AWSHolisticware;
+using System.Net;
 
 namespace HolisticWare.SlideShow.BusinessLogic
 {

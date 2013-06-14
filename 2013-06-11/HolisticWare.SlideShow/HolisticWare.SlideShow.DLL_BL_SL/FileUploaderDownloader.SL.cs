@@ -6,7 +6,7 @@ using System.Text;
 
 using System.IO;
 
-using HolisticWare.SlideShow.BusinessLogic.MonoASPnetMVC4AWSHolisticware;
+//using HolisticWare.SlideShow.BusinessLogic.MonoASPnetMVC4AWSHolisticware;
 
 namespace HolisticWare.SlideShow.BusinessLogic
 {
@@ -50,10 +50,10 @@ namespace HolisticWare.SlideShow.BusinessLogic
 				# region    WCF difference
 				//-------------------------------------------------------------------------
 				// create an instance for the web service WebServiceFileUploader
-				WebServiceFileUploaderSoapClient srv = new WebServiceFileUploaderSoapClient();
+				//WebServiceFileUploaderSoapClient srv = new WebServiceFileUploaderSoapClient();
 
-				srv.Endpoint.Address = new System.ServiceModel.EndpointAddress(url);
-				srv.UploadFileCompleted += new EventHandler<UploadFileCompletedEventArgs>(srv_UploadFileCompleted);
+				//srv.Endpoint.Address = new System.ServiceModel.EndpointAddress(url);
+				//srv.UploadFileCompleted += new EventHandler<UploadFileCompletedEventArgs>(srv_UploadFileCompleted);
 				//-------------------------------------------------------------------------
 				# endregion WCF difference
 	
@@ -66,7 +66,7 @@ namespace HolisticWare.SlideShow.BusinessLogic
 				if (size  <= 4000)
 				{
 					// pass the byte array (file) and file name to the web service
-					srv.UploadFileAsync(data, strFile);
+					//srv.UploadFileAsync(data, strFile);
 
 					// moved Async!
 					// this will always say OK unless an error occurs,
@@ -97,20 +97,20 @@ namespace HolisticWare.SlideShow.BusinessLogic
 			return;
 		}
 
-		public void srv_UploadFileCompleted(object sender, UploadFileCompletedEventArgs e)
-		{
-			// this will always say OK unless an error occurs,
-			// if an error occurs, the service returns the error message
-
-			// result of the WebServiceMethod
-			string sTmp = e.Result;
-
-			Messages[0] = "File Upload Status: " + sTmp;
-			Messages[1] = "File Upload";
-			// System.Windows.Forms.MessageBox.Show("File Upload Status: " + sTmp, "File Upload");
-
-			return;
-		}
+//		public void srv_UploadFileCompleted(object sender, UploadFileCompletedEventArgs e)
+//		{
+//			// this will always say OK unless an error occurs,
+//			// if an error occurs, the service returns the error message
+//
+//			// result of the WebServiceMethod
+//			string sTmp = e.Result;
+//
+//			Messages[0] = "File Upload Status: " + sTmp;
+//			Messages[1] = "File Upload";
+//			// System.Windows.Forms.MessageBox.Show("File Upload Status: " + sTmp, "File Upload");
+//
+//			return;
+//		}
 
 	}
 }

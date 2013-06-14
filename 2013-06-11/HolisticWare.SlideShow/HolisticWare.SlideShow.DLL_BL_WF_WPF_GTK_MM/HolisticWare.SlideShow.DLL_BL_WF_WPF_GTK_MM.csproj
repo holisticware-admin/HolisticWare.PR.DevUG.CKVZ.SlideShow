@@ -53,9 +53,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Web References\MonoASPnetMVC4AWSHolisticware\Reference.cs">
-      <DependentUpon>Reference.map</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
@@ -71,12 +68,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Web References\MonoASPnetMVC4AWSHolisticware\TempConvert.disco" />
-    <None Include="Web References\MonoASPnetMVC4AWSHolisticware\TempConvert.wsdl" />
-    <None Include="Web References\MonoASPnetMVC4AWSHolisticware\Reference.map">
-      <Generator>MSDiscoCodeGenerator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
@@ -90,12 +81,5 @@
   -->
   <ItemGroup>
     <WebReferences Include="Web References" />
-  </ItemGroup>
-  <ItemGroup>
-    <WebReferenceUrl Include="http://www.w3schools.com/WebServices/TempConvert.asmx">
-      <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References\MonoASPnetMVC4AWSHolisticware</RelPath>
-      <UpdateFromURL>http://www.w3schools.com/WebServices/TempConvert.asmx</UpdateFromURL>
-    </WebReferenceUrl>
   </ItemGroup>
 </Project>
