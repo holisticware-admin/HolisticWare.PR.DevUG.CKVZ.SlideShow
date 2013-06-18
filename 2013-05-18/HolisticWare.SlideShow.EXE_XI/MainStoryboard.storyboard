@@ -27,14 +27,8 @@
                                     <segue destination="LIH-xE-aS2" kind="push" id="Akl-fo-2R8"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="192.168.1.67" borderStyle="roundedRect" placeholder="ip address" minimumFontSize="17" id="Y5C-pW-aD2">
-                                <rect key="frame" x="65" y="53" width="191" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="8080" borderStyle="roundedRect" placeholder="port" minimumFontSize="17" id="k1C-3u-I7m">
-                                <rect key="frame" x="65" y="91" width="191" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http://127.0.0.1:8080/WebServiceFileUploader.asmx" borderStyle="roundedRect" placeholder="ip address" minimumFontSize="17" id="Y5C-pW-aD2">
+                                <rect key="frame" x="8" y="53" width="305" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
@@ -52,7 +46,7 @@
                     <navigationItem key="navigationItem" title="HolisticWare PhotoMania" id="PyX-NA-PaF"/>
                     <connections>
                         <outlet property="photoPicker" destination="LlA-Xl-4ZZ" id="H4d-dT-Z3T"/>
-                        <outlet property="textFieldIPAddress" destination="Y5C-pW-aD2" id="b5S-qD-wV7"/>
+                        <outlet property="textBoxSend" destination="Y5C-pW-aD2" id="name-outlet-Y5C-pW-aD2"/>
                         <outlet property="textFieldPort" destination="k1C-3u-I7m" id="PsX-oy-axM"/>
                     </connections>
                 </viewController>
@@ -141,4 +135,5 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <resources/>
 </document>

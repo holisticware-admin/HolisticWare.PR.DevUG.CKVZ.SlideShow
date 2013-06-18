@@ -37,16 +37,13 @@ namespace PhotoMania
 
 
 			//DISMISS KEYBOARD
-			textFieldIPAddress.ShouldReturn = delegate
+			textBoxSend.ShouldReturn = delegate
 			{
-				textFieldIPAddress.ResignFirstResponder();
+				textBoxSend.ResignFirstResponder();
+                
 				return true;
 			};
-			textFieldPort.ShouldReturn = delegate
-			{
-				textFieldPort.ResignFirstResponder();
-				return true;
-			};
+
 
 
 		}

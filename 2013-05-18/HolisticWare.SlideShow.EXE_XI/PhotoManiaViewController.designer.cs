@@ -1,7 +1,7 @@
 // WARNING
 //
 // This file has been generated automatically by Xamarin Studio to store outlets and
-// actions made in the Xcode designer. If it is removed, they will be lost.
+// actions made in the UI designer. If it is removed, they will be lost.
 // Manual changes to this file may not be handled correctly.
 //
 using MonoTouch.Foundation;
@@ -15,10 +15,7 @@ namespace PhotoMania
 		MonoTouch.UIKit.UIButton photoPicker { get; set; }
 
 		[Outlet]
-		MonoTouch.UIKit.UITextField textFieldIPAddress { get; set; }
-
-		[Outlet]
-		MonoTouch.UIKit.UITextField textFieldPort { get; set; }
+		MonoTouch.UIKit.UITextField textBoxSend { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
@@ -27,14 +24,9 @@ namespace PhotoMania
 				photoPicker = null;
 			}
 
-			if (textFieldIPAddress != null) {
-				textFieldIPAddress.Dispose ();
-				textFieldIPAddress = null;
-			}
-
-			if (textFieldPort != null) {
-				textFieldPort.Dispose ();
-				textFieldPort = null;
+			if (textBoxSend != null) {
+				textBoxSend.Dispose ();
+				textBoxSend = null;
 			}
 		}
 	}
