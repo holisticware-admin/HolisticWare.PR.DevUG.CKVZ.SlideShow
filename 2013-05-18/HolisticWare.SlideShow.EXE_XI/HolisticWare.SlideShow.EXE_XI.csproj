@@ -99,5 +99,11 @@
   <ItemGroup>
     <InterfaceDefinition Include="MainStoryboard.storyboard" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HolisticWare.SlideShow.DLL_BL_XI\HolisticWare.SlideShow.DLL_BL_XI.csproj">
+      <Project>{FA570438-4290-4815-9E2B-19474EB9FD15}</Project>
+      <Name>HolisticWare.SlideShow.DLL_BL_XI</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

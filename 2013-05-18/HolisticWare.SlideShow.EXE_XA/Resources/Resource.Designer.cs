@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("HolisticWare.SlideShow.EXE_XA.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("HolisticWare.SlideShow.EXE.Resource", IsApplication=true)]
 
-namespace HolisticWare.SlideShow.EXE_XA
+namespace HolisticWare.SlideShow.EXE
 {
 	
 	
@@ -26,6 +26,8 @@ namespace HolisticWare.SlideShow.EXE_XA
 		
 		public static void UpdateIdValues()
 		{
+			HolisticWare.SlideShow.BusinessLogic.Resource.String.ApplicationName = HolisticWare.SlideShow.EXE.Resource.String.ApplicationName;
+			HolisticWare.SlideShow.BusinessLogic.Resource.String.Hello = HolisticWare.SlideShow.EXE.Resource.String.Hello;
 		}
 		
 		public partial class Attribute
@@ -61,7 +63,10 @@ namespace HolisticWare.SlideShow.EXE_XA
 		{
 			
 			// aapt resource value: 0x7f050000
-			public const int MyButton = 2131034112;
+			public const int buttonBrowse = 2131034112;
+			
+			// aapt resource value: 0x7f050001
+			public const int buttonLoad = 2131034113;
 			
 			static Id()
 			{

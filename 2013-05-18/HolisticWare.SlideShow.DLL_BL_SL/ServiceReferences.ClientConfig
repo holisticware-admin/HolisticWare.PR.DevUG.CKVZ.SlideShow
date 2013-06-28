@@ -1,0 +1,18 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="WebServiceFileUploaderSoap" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:8404/WebServiceFileUploader.asmx"
+                binding="basicHttpBinding" bindingConfiguration="WebServiceFileUploaderSoap"
+                contract="MonoASPnetMVC4AWSHolisticware.WebServiceFileUploaderSoap"
+                name="WebServiceFileUploaderSoap" />
+        </client>
+    </system.serviceModel>
+</configuration>

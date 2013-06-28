@@ -1,0 +1,23 @@
+
+
+using HolisticWare.SlideShow.BusinessLogic;
+using HolisticWare.SlideShow.BusinessLogic.MonoASPnetMVC4AWSHolisticware;
+
+using HolisticWare.SlideShow.EXE.Controllers;
+
+namespace HolisticWare.SlideShow.EXE
+{
+    public partial class Screen : Form
+    {
+        public Screen()
+        {
+            InitializeComponent();
+
+            // Controller
+            textBoxUrlWebService.Text = WebServiceClientProxy.Url;
+
+            return;
+        }
+
+    }
+}

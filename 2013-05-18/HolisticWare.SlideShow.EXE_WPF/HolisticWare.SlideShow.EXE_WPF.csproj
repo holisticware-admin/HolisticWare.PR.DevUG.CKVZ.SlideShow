@@ -93,9 +93,9 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HolisticWare.SlideShow.DLL_BL_WF\HolisticWare.SlideShow.DLL_BL_WF.csproj">
+    <ProjectReference Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK.csproj">
       <Project>{9E9BC9C6-106D-4FD2-B35E-B1E32E405391}</Project>
-      <Name>HolisticWare.SlideShow.DLL_BL_WF</Name>
+      <Name>HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

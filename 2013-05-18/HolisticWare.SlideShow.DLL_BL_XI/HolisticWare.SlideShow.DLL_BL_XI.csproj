@@ -30,42 +30,63 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Properties\" />
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\HolisticWare.SlideShow.DLL_BL_WF\Web References\TestUploader.Uploader.FileUploader\Reference.cs">
-      <Link>Web References\TestUploader.Uploader.FileUploader\Reference.cs</Link>
+    <Compile Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\WebServiceClientProxy.cs">
+      <Link>WebServiceClientProxy.cs</Link>
+    </Compile>
+    <WebReferences Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\Web References\" />
+    <Compile Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\BitmapImageFile.cs">
+      <Link>BitmapImageFile.cs</Link>
+    </Compile>
+    <Compile Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\FileUploaderDownloader.cs">
+      <Link>FileUploaderDownloader.cs</Link>
+    </Compile>
+    <Compile Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\FileUploaderDownloader.non-SL.cs">
+      <Link>FileUploaderDownloader.non-SL.cs</Link>
+    </Compile>
+    <Compile Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\Web References\MonoASPnetMVC4AWSHolisticware\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
+      <Link>Web References\MonoASPnetMVC4AWSHolisticware\Reference.cs</Link>
     </Compile>
-    <None Include="..\HolisticWare.SlideShow.DLL_BL_WF\Web References\TestUploader.Uploader.FileUploader\WebServiceFileUploader.disco">
-      <Link>Web References\TestUploader.Uploader.FileUploader\WebServiceFileUploader.disco</Link>
-    </None>
-    <None Include="..\HolisticWare.SlideShow.DLL_BL_WF\Web References\TestUploader.Uploader.FileUploader\Reference.map">
-      <Link>Web References\TestUploader.Uploader.FileUploader\Reference.map</Link>
+    <None Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\Web References\MonoASPnetMVC4AWSHolisticware\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
+      <Link>Web References\MonoASPnetMVC4AWSHolisticware\Reference.map</Link>
     </None>
-    <None Include="..\HolisticWare.SlideShow.DLL_BL_WF\Web References\TestUploader.Uploader.FileUploader\WebServiceFileUploader.wsdl">
-      <Link>Web References\TestUploader.Uploader.FileUploader\WebServiceFileUploader.wsdl</Link>
+    <None Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\Web References\MonoASPnetMVC4AWSHolisticware\WebServiceFileUploader.wsdl">
+      <Link>Web References\MonoASPnetMVC4AWSHolisticware\WebServiceFileUploader.wsdl</Link>
     </None>
-    <WebReferences Include="Web References\" />
-    <WebReferenceUrl Include="http://localhost:21886/WebServiceFileUploader.asmx">
+    <WebReferenceUrl Include="http://localhost:8404/WebServiceFileUploader.asmx">
       <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References\TestUploader.Uploader.FileUploader\</RelPath>
-      <UpdateFromURL>http://localhost:21886/WebServiceFileUploader.asmx</UpdateFromURL>
-      <ServiceLocationURL />
-      <CachedDynamicPropName />
+      <RelPath>Web References\MonoASPnetMVC4AWSHolisticware\</RelPath>
+      <UpdateFromURL>http://localhost:8404/WebServiceFileUploader.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>HolisticWare_SlideShow_EXE_WF_TestUploader_Uploader_FileUploader_WebServiceFileUploader</CachedSettingsPropName>
+      <CachedSettingsPropName>HolisticWare_SlideShow_DLL_BL_WF_MonoASPnetMVC4AWSHolisticware_WebServiceFileUploader</CachedSettingsPropName>
     </WebReferenceUrl>
+    <None Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\Web References\MonoASPnetMVC4AWSHolisticware\WebServiceFileUploader.disco">
+      <Link>Web References\MonoASPnetMVC4AWSHolisticware\WebServiceFileUploader.disco</Link>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkReference="9e9bc9c6-106d-4fd2-b35e-b1e32e405391" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.MA.cs;\.MT.cs;\.WF.cs;\.WPF.cs;\.ASPNET.cs;\.SLRIA.cs;\.MM.cs;\.Mono.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$;\\?\.WP(\\.*)?$;\\?\.MA(\\.*)?$;\\?\.MT(\\.*)?$;\\?\.WF(\\.*)?$;\\?\.WPF(\\.*)?$;\\?\.ASPNET(\\.*)?$;\\?\.SLRIA(\\.*)?$;\\?\.MM(\\.*)?$;\\?\.Mono(\\.*)?$" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>

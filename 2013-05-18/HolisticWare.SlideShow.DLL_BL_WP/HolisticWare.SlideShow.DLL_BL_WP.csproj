@@ -41,6 +41,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Windows" />
     <Reference Include="system" />
     <Reference Include="System.Core" />
@@ -49,11 +51,57 @@
     <Reference Include="mscorlib.extensions" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\BitmapImageFile.cs">
+      <Link>BitmapImageFile.cs</Link>
+    </Compile>
+    <Compile Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\FileUploaderDownloader.cs">
+      <Link>FileUploaderDownloader.cs</Link>
+    </Compile>
+    <Compile Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\WebServiceClientProxy.cs">
+      <Link>WebServiceClientProxy.cs</Link>
+    </Compile>
+    <Compile Include="..\HolisticWare.SlideShow.DLL_BL_SL\FileUploaderDownloader.SL.cs">
+      <Link>FileUploaderDownloader.SL.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\MonoASPnetMVC4AWSHolisticware\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MonoASPnetMVC4AWSHolisticware\WebServiceFileUploader.wsdl" />
+    <Content Include="ServiceReferences.ClientConfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\MonoASPnetMVC4AWSHolisticware\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MonoASPnetMVC4AWSHolisticware\WebServiceFileUploader.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MonoASPnetMVC4AWSHolisticware\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MonoASPnetMVC4AWSHolisticware\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MonoASPnetMVC4AWSHolisticware\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
-  <ProjectExtensions />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkReference="9e9bc9c6-106d-4fd2-b35e-b1e32e405391" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.MA.cs;\.MT.cs;\.WF.cs;\.WPF.cs;\.ASPNET.cs;\.SLRIA.cs;\.MM.cs;\.Mono.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$;\\?\.WP(\\.*)?$;\\?\.MA(\\.*)?$;\\?\.MT(\\.*)?$;\\?\.WF(\\.*)?$;\\?\.WPF(\\.*)?$;\\?\.ASPNET(\\.*)?$;\\?\.SLRIA(\\.*)?$;\\?\.MM(\\.*)?$;\\?\.Mono(\\.*)?$" />
+    </VisualStudio>
+  </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

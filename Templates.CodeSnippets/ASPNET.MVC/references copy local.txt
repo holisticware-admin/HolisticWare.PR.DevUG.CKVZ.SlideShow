@@ -1,0 +1,9 @@
+System.Web.Mvc
+System.Web.Helpers
+System.Web.WebPages
+System.Web.Entity
+System.Data.Entity
+
+
+"%PROGRAMFILES%\Mono-3.0.10\bin\xsp4.bat"
+

@@ -1,0 +1,25 @@
+<ItemGroup>
+  <WebReferences Include="Web References\" />
+  <Compile Include="Web References\MonoASPnetMVC4AWSHolisticware\Reference.cs">
+	<AutoGen>True</AutoGen>
+	<DesignTime>True</DesignTime>
+	<DependentUpon>Reference.map</DependentUpon>
+  </Compile>
+  <None Include="Web References\MonoASPnetMVC4AWSHolisticware\Reference.map">
+	<Generator>MSDiscoCodeGenerator</Generator>
+	<LastGenOutput>Reference.cs</LastGenOutput>
+  </None>
+  <None Include="Web References\MonoASPnetMVC4AWSHolisticware\WebServiceFileUploader.wsdl" />
+  <WebReferenceUrl Include="http://localhost:8404/WebServiceFileUploader.asmx">
+	<UrlBehavior>Dynamic</UrlBehavior>
+	<RelPath>Web References\MonoASPnetMVC4AWSHolisticware\</RelPath>
+	<UpdateFromURL>http://localhost:8404/WebServiceFileUploader.asmx</UpdateFromURL>
+	<ServiceLocationURL>
+	</ServiceLocationURL>
+	<CachedDynamicPropName>
+	</CachedDynamicPropName>
+	<CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+	<CachedSettingsPropName>HolisticWare_SlideShow_DLL_BL_WF_MonoASPnetMVC4AWSHolisticware_WebServiceFileUploader</CachedSettingsPropName>
+  </WebReferenceUrl>
+  <None Include="Web References\MonoASPnetMVC4AWSHolisticware\WebServiceFileUploader.disco" />
+</ItemGroup>

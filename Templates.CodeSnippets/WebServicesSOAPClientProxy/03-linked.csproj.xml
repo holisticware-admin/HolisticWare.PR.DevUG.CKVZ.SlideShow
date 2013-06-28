@@ -1,0 +1,31 @@
+<ItemGroup>
+  <WebReferences Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\Web References\" />
+  <Compile Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\Web References\MonoASPnetMVC4AWSHolisticware\Reference.cs">
+	<AutoGen>True</AutoGen>
+	<DesignTime>True</DesignTime>
+	<DependentUpon>Reference.map</DependentUpon>
+	<Link>Web References\MonoASPnetMVC4AWSHolisticware\Reference.cs</Link>
+  </Compile>
+  <None Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\Web References\MonoASPnetMVC4AWSHolisticware\Reference.map">
+	<Generator>MSDiscoCodeGenerator</Generator>
+	<LastGenOutput>Reference.cs</LastGenOutput>
+	<Link>Web References\MonoASPnetMVC4AWSHolisticware\Reference.map</Link>
+  </None>
+  <None Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\Web References\MonoASPnetMVC4AWSHolisticware\WebServiceFileUploader.wsdl">
+	<Link>Web References\MonoASPnetMVC4AWSHolisticware\WebServiceFileUploader.wsdl</Link>
+  </None>
+  <WebReferenceUrl Include="http://localhost:8404/WebServiceFileUploader.asmx">
+	<UrlBehavior>Dynamic</UrlBehavior>
+	<RelPath>Web References\MonoASPnetMVC4AWSHolisticware\</RelPath>
+	<UpdateFromURL>http://localhost:8404/WebServiceFileUploader.asmx</UpdateFromURL>
+	<ServiceLocationURL>
+	</ServiceLocationURL>
+	<CachedDynamicPropName>
+	</CachedDynamicPropName>
+	<CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+	<CachedSettingsPropName>HolisticWare_SlideShow_DLL_BL_WF_MonoASPnetMVC4AWSHolisticware_WebServiceFileUploader</CachedSettingsPropName>
+  </WebReferenceUrl>
+  <None Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\Web References\MonoASPnetMVC4AWSHolisticware\WebServiceFileUploader.disco">
+	<Link>Web References\MonoASPnetMVC4AWSHolisticware\WebServiceFileUploader.disco</Link>
+  </None>
+</ItemGroup>

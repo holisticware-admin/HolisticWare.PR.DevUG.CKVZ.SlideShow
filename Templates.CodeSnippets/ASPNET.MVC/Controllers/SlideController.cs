@@ -16,5 +16,9 @@ namespace HolisticWare.SlideShow.EXE.Controllers
             return View(new HolisticWare.SlideShow.EXE.Models.Slides());
         }
 
-    }
+		public ActionResult SilverlightClient()
+		{
+			return View();
+		}
+	}
 }

@@ -85,18 +85,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ControllerViewModel\BusinessLogicObjects.cs" />
-    <Compile Include="ControllerViewModel\FileUploaderDownloader.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Screen.WF.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screen.Designer.cs">
+      <DependentUpon>Screen.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Screen.resx">
+      <DependentUpon>Screen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -123,10 +124,13 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HolisticWare.SlideShow.DLL_BL_WF\HolisticWare.SlideShow.DLL_BL_WF.csproj">
+    <ProjectReference Include="..\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK\HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK.csproj">
       <Project>{9E9BC9C6-106D-4FD2-B35E-B1E32E405391}</Project>
-      <Name>HolisticWare.SlideShow.DLL_BL_WF</Name>
+      <Name>HolisticWare.SlideShow.DLL_BL_ASPnet_WF_WPF_MM_XM_GTK</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
