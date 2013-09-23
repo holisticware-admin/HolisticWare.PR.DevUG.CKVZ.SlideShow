@@ -110,5 +110,6 @@ UpgradeLog*.XML
 *.userprefs
 
 
+*.pem
 *.ppk
 *.secure.bat
